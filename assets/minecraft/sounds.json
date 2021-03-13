@@ -1,0 +1,22 @@
+{ 
+	"custom.jaakuname": {
+		"sounds": [
+			"custom/jaakuname"
+		]
+	},
+	"custom.jaakudescription": {
+		"sounds": [
+			"custom/jaakudescription"
+		]
+	},
+	"custom.jaakudragon": {
+		"sounds": [
+			"custom/jaakudragon"
+		]
+	},
+	"custom.falchion": {
+		"sounds": [
+			"custom/falchion"
+		]
+	}
+}
