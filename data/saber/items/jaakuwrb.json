@@ -1,0 +1,111 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 1,
+		"group": "wrb_tab",
+		"rarity": "rare"
+	},
+
+	"abilities": {
+		"name": {
+    		"ability": "threecore:command",
+    		"show_in_bar": true,
+    		"hidden": false,
+    		"title": {
+      			"translate": "ability.threecore.command"
+    		},
+    		"icon": {
+      			"texture": "saber:textures/gui/icons.png",
+      			"u": 0,
+      			"v": 0,
+      			"width": 16,
+      			"height": 16,
+      			"texture_width": 256,
+      			"texture_height": 256,
+      			"type": "threecore:texture"
+    		},
+    		"bar_color": "purple",
+    		"additional_data": {},
+    		"commands": "/playsound minecraft:custom.jaakuname master @a ~ ~ ~",
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          }
+        ]
+    	},
+      "jaakuname": {
+        "ability": "threecore:dummy",
+        "show_in_bar": false,
+        "hidden": false,
+        "title": {
+          "translate": "ability.threecore.dummy"
+        },
+        "icon": {
+          "item": "minecraft:barrier",
+          "count": 1,
+          "type": "threecore:item"
+        },
+        "bar_color": "light_gray",
+        "additional_data": {}
+      }, 
+    	"description": {
+    		"ability": "threecore:command",
+    		"show_in_bar": true,
+    		"hidden": false,
+    		"title": {
+      			"translate": "ability.threecore.command"
+    		},
+    		"icon": {
+      			"texture": "saber:textures/gui/icons.png",
+      			"u": 17,
+      			"v": 0,
+      			"width": 16,
+      			"height": 16,
+      			"texture_width": 256,
+      			"texture_height": 256,
+      			"type": "threecore:texture"
+    		},
+    		"bar_color": "purple",
+    		"additional_data": {},
+    		"commands": "/playsound minecraft:custom.jaakudescription master @a ~ ~ ~",
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          }
+        ]
+    	}
+  	}
+}

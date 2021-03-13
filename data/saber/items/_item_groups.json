@@ -1,0 +1,20 @@
+[
+  {
+    "name": "seiken_tab",
+    "icon": {
+      "item": "saber:ankokukenkurayami"
+    }
+  },
+  {
+  	"name": "wrb_tab",
+  	"icon": {
+  		"item": "saber:jaakuwrb"
+  	}
+  },
+  {
+    "name": "driver_tab_saber",
+    "icon": {
+      "item": "saber:haken_bladriver"
+    }
+  }
+]
