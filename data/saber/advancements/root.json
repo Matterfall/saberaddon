@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:jaakuwrb"
+        },
+        "title": {
+            "translate": "saber.advancements.jaakuwrb"
+        },
+        "description": {
+            "translate": "saber.advancements.jaakuwrb.description"
+        },
+        "background": "threecore:textures/block/adamantium/storage_block.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "goal"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:jaakuwrb"
+                    }
+                ]
+            }
+        }
+    }
+}
