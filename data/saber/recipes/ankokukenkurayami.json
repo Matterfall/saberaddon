@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "DGD"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:silver_ingot"
+        },
+        "G": {
+            "item": "minecraft:ender_eye"
+        },
+        "E": {
+            "item": "minecraft:diamond_sword"
+        },
+        "F": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "saber:ankokukenkurayami",
+        "count": 1
+    }
+}
