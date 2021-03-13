@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DED",
+        "DDD",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:black_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "item": "threecore:silver_ingot"
+        },
+        "E": {
+            "item": "minecraft:polished_blackstone_button"
+        }
+    },
+    "result": {
+        "item": "saber:caliburdriver",
+        "count": 1
+    }
+}
