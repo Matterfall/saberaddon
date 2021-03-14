@@ -1,0 +1,10 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 64,
+		"group": "wrb_tab",
+		"rarity": "common"
+	}
+	
+}
