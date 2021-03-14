@@ -7,11 +7,12 @@
   "itemGroup.seiken_tab": "Heiligen Klingen",
 
   "item.saber.phoenix_feather": "Feder eines Phönix",
-  "item.saber.blank_wrb": "Leeres Wunder Rider Buch",
+  "item.saber.blank_wrb": "Leeres Wunder Ride Buch",
+  "item.saber.blank_big_wrb": "Leeres Großes Wunder Ride Buch",
 
 	"item.saber.caliburdriver": "Dunkles Schwert Calibur Driver",
-  "item.saber.jaakuwrb": "Jaaku Drache Wunder Ride Buch",
-  "item.saber.ankokukenkurayami": "Das Schwert der Dunkelheit, Kurayami",
+  "item.saber.jaaku_wrb": "Jaaku Drache Wunder Ride Buch",
+  "item.saber.ankokuken_kurayami": "Das Schwert der Dunkelheit, Kurayami",
 
   "item.saber.mumeiken_kyomu": "Unmarkiertes Schwert des Nichts",
   "item.saber.haken_bladriver": "Überlegenes Schwert KlingenDriver",
