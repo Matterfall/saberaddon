@@ -3,24 +3,21 @@
     "pattern": [
         "FFF",
         "FEF",
-        "DGD"
+        "FGF"
     ],
-    "key": {
-        "D": {
-            "item": "threecore:silver_ingot"
-        },
+    "key": { 
         "G": {
-            "item": "minecraft:ender_eye"
+            "item": "saber:phoenix_feather"
         },
         "E": {
             "item": "minecraft:netherite_sword"
         },
         "F": {
-            "item": "minecraft:gold_ingot"
+            "item": "threecore:steel_ingot"
         }
     },
     "result": {
-        "item": "saber:ankokuken_kurayami",
+        "item": "saber:mumeiken_kyomu",
         "count": 1
     }
 }
