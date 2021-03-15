@@ -4,17 +4,19 @@
 	"saber.advancements.ankokukenkurayami": "裏切りはそれだけの価値がありましたか?",
 	"saber.advancements.ankokukenkurayami.description": "闇の剣、倉谷の達人になろう!",
 
-  	"itemGroup.seiken_tab": "聖剣",
-  	"itemGroup.wrb_tab": "ワンダーライドブック",
-  	"itemGroup.driver_tab_saber": "ライバー",
+  "itemGroup.seiken_tab": "聖剣",
+  "itemGroup.wrb_tab": "ワンダーライドブック",
+  "itemGroup.driver_tab_saber": "ライバー",
 
-  	"item.saber.phoenix_feather": "フェニックスフェザー",
-  	"item.saber.blank_wrb": "ブランクワンダーライドブック",
-  	"item.saber.blank_big_wrb": "ブランク大きいワンダーライドブック",
+  "item.saber.phoenix_feather": "フェニックスフェザー",
+  "item.saber.blank_wrb": "ブランクワンダーライドブック",
+  "item.saber.blank_big_wrb": "ブランク大きいワンダーライドブック",
+  "item.saber.alter_ridebook": "アルターライドブック",
 
-  	"item.saber.caliburdriver": "変身ベルト 邪剣カリバードライバー",
- 	"item.saber.jaakuwrb": "ジャアクドラゴンワンダーライドブック",
- 	"item.saber.ankokukenkurayami": "闇黒剣月闇［アンコクケンクラヤミ］",
+  "item.saber.caliburdriver": "変身ベルト 邪剣カリバードライバー",
+ 	"item.saber.jaaku_wrb": "ジャアクドラゴンワンダーライドブック",
+  "item.saber.jaou_wrb": "ジャオウドラゴンワンダーライドブック",
+ 	"item.saber.ankokuken_kurayami": "闇黒剣月闇［アンコクケンクラヤミ］",
 
  	"item.saber.mumeiken_kyomu": "無銘剣虚無［ムメイケンキョム］",
  	"item.saber.haken_bladriver": "変身ベルト 覇剣ブレードライバー",
