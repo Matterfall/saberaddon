@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:ankokuken_kurayami"
+        },
+        "title": {
+            "translate": "saber.advancements.ankokukenkurayami"
+        },
+        "description": {
+            "translate": "saber.advancements.ankokukenkurayami.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "goal"
+    },
+    "parent": "saber:evil/jaaku_wrb",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:ankokuken_kurayami"
+                    }
+                ]
+            }
+        }
+    }
+}

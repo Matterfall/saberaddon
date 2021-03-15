@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:jaaku_wrb"
+        },
+        "title": {
+            "translate": "saber.advancements.jaakuwrb"
+        },
+        "description": {
+            "translate": "saber.advancements.jaakuwrb.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "parent": "saber:evil/root",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:jaaku_wrb"
+                    }
+                ]
+            }
+        }
+    }
+}
