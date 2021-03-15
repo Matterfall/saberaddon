@@ -18,5 +18,22 @@
 		"sounds": [
 			"custom/falchion"
 		]
+	},
+	"custom.konchuu_daihyakka": {
+		"sounds": [
+			"custom/konchuu_daihyakka"
+		]
+	},
+	"custom.konchuu_daihyakka_description": {
+		"sounds": [
+			"custom/konchuu_daihyakka_description"
+		]
+	},
+	"custom.sabela_henshin": {
+		"sounds": [
+			"custom/sabela_henshin"
+		]
 	}
 }
+
+
