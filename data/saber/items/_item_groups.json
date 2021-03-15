@@ -2,13 +2,13 @@
   {
     "name": "seiken_tab",
     "icon": {
-      "item": "saber:ankokukenkurayami"
+      "item": "saber:ankokuken_kurayami"
     }
   },
   {
   	"name": "wrb_tab",
   	"icon": {
-  		"item": "saber:jaakuwrb"
+  		"item": "saber:blank_wrb"
   	}
   },
   {
