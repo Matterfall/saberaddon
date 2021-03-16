@@ -1,0 +1,22 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 19000,
+		"group": "seiken_tab",
+		"rarity": "rare"
+	},
+    "tool_type": "sword",
+    "attack_damage": 3,
+    "attack_speed": 1.2,
+    "item_tier": {
+        "max_uses": 19000,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "threecore:silver_ingot"
+        }
+    }
+}

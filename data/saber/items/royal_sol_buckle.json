@@ -14,17 +14,17 @@
    		    {
    			    "type": "threecore:default",
    			    "model": "saber:saber_suits",
-   			    "texture": "saber:textures/models/armor/calibur/caliburdriver.png"
+   			    "texture": "saber:textures/models/armor/sabela/sabela_belt.png"
    		    },
           {
             "type": "threecore:default",
             "model": "saber:saber_suits",
             "texture": {
-            "base": "saber:textures/models/armor/calibur/calibur.png",
+            "base": "saber:textures/models/armor/sabela/sabela.png",
             "transformers": [
                 {
                   	"type": "threecore:alpha_mask",
-                  	"mask": "saber:textures/models/alpha_masks/calibur/transformation_#TIMER.png"
+                  	"mask": "saber:textures/models/alpha_masks/sabela/transformation_#TIMER.png"
                 }
          	  ],
          	  "variables": {
@@ -33,19 +33,19 @@
                   "nbt_tag": "Opening"
                	}
             },
-         	  "output": "saber:textures/models/armor/calibur/calibur_#TIMER"
+         	  "output": "saber:textures/models/armor/sabela/sabela_#TIMER"
          	}
       	},
       	{
          	"type": "threecore:default",
          	"glow": true,
          	"model": "saber:saber_suits",
-         	"texture": "saber:textures/models/armor/calibur/caliburglow.png",
+         	"texture": "saber:textures/models/armor/sabela/sabela_glow.png",
          	"predicates": [
         		{
           			"type": "threecore:integer_nbt",
           			"nbt_tag": "Opening",
-          			"value": 29
+          			"value": 32
         		}
       		]
       	}
@@ -54,10 +54,10 @@
     "abilities": {
         "opening": {
          	"ability": "threecore:opening_nbt_timer",
-         	"max_timer": 29,
+         	"max_timer": 32,
          	"icon": {
             	"type": "threecore:item",
-            	"item": "saber:caliburdriver"
+            	"item": "saber:royal_sol_buckle"
          	},
          	"conditions": [
             	{
@@ -77,15 +77,12 @@
                 "enabling": false,
                 "needs_key": false,
                 "mainhand": {
-                  "item": "saber:ankokuken_kurayami"
-                },
-                "offhand": {
-                  "item": "saber:jaaku_wrb"
+                  "item": "saber:eneiken_noroshi"
                 }
               }
          	]
       	},
-        "jaakuannouncement": {
+        "sabela_henshin": {
           "ability": "threecore:command",
           "show_in_bar": false,
           "hidden": true,
@@ -99,7 +96,7 @@
           },
           "bar_color": "light_gray",
           "additional_data": {},
-          "commands": "/playsound minecraft:custom.jaakudragon master @a ~ ~ ~",
+          "commands": "/playsound minecraft:custom.sabela_henshin master @a ~ ~ ~",
           "conditions": [ 
             {
               "type": "threecore:ability_enabled",
@@ -125,40 +122,6 @@
               "max": 1
             }
           ]
-        },
-        "example_ability": {
-          "ability": "threecore:attribute_modifier",
-          "show_in_bar": false,
-          "hidden": true,
-          "title": {
-            "translate": "ability.threecore.attribute_modifier"
-          },
-          "icon": {
-            "item": "minecraft:barrier",
-            "count": 1,
-            "type": "threecore:item"
-          },
-          "bar_color": "light_gray",
-          "additional_data": {},
-          "attribute": "minecraft:generic.armor",
-          "amount": 12,
-          "operation": 0,
-          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
-          "conditions": [
-            {
-              "type": "threecore:item_integer_nbt",
-              "custom_title": {
-                "text": "empty"
-              },
-              "invert": false,
-              "enabling": false,
-              "needs_key": false,
-              "slot": "chest",
-              "nbt_tag": "Opening",
-              "min": 20,
-              "max": 29
-            }
-          ]
-      }
+        }
    	}
 }
