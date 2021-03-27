@@ -28,6 +28,12 @@
   "item.saber.eneiken_noroshi": "変身聖剣 煙叡剣狼煙 [エンエイケンノロシ]",
   "item.saber.royal_sol_buckle": "納刀ベルト ソードオブロゴスバックル",
 
+  "item.saber.sol_buckle": "納刀ベルト ソードオブロゴスバックル",
+
+  "item.saber.fuusoken_hayate": "変身聖剣 風双剣翠風［フウソウケンハヤテ］",
+  "item.saber.fuusoken_hayate_blade_main": "変身聖剣 風双剣翠風［フウソウケンハヤテ］ (1/2)",
+  "item.saber.fuusoken_hayate_blade": "変身聖剣 風双剣翠風［フウソウケンハヤテ］ (2/2)",
+
  	"item.saber.kaenken_rekka": "火炎剣烈火［カエンケンレッカ］",
  	"item.saber.swordriver_saber": "変身ベルト聖剣ソードライバー"
 }

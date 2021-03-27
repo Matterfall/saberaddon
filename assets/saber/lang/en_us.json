@@ -28,6 +28,12 @@
   "item.saber.eneiken_noroshi": "The Sword of Smoke, Noroshi",
   "item.saber.royal_sol_buckle": "Royal Sword of Logos Buckle",
 
+  "item.saber.sol_buckle": "Sword of Logos Buckle",
+
+  "item.saber.fuusoken_hayate": "The Twin Blades of the Wind, Hayate",
+  "item.saber.fuusoken_hayate_blade_main": "The Twin Blades of the Wind, Hayate (1/2)",
+  "item.saber.fuusoken_hayate_blade": "The Twin Blades of the Wind, Hayate (2/2)",
+
   "item.saber.kaenken_rekka": "The Flame Sword of Raging Fire",
   "item.saber.swordriver_saber": "SworDriver"
 }

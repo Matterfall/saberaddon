@@ -28,6 +28,12 @@
   "item.saber.eneiken_noroshi": "Das Schwert des Rauches, Noroshi",
   "item.saber.royal_sol_buckle": "Royaler Sword of Logos Gurt",
 
+  "item.saber.sol_buckle": "Sword of Logos Gurt",
+
+  "item.saber.fuusoken_hayate": "Das Zwillingsschwert des Windes, Hayate",
+  "item.saber.fuusoken_hayate_blade_main": "Das Zwillingsschwert des Windes, Hayate (1/2)",
+  "item.saber.fuusoken_hayate_blade": "Das Zwillingsschwert des Windes, Hayate (2/2)",
+
   "item.saber.kaenken_rekka": "Das Flammen Schwert des Rasendes Feuer",
   "item.saber.swordriver_saber": "KlingenDriver"
 }
