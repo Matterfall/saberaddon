@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " D ",
+        "DED",
+        " D "
+    ],
+    "key": {
+        "E": {
+            "item": "saber:sol_buckle"
+        },
+        "D": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "saber:royal_sol_buckle",
+        "count": 1
+    }
+}

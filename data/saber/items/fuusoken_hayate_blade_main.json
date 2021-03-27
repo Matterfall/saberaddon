@@ -1,0 +1,70 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 19000, 
+		"rarity": "rare"
+	},
+    "tool_type": "sword",
+    "attack_damage": 2,
+    "attack_speed": -1.2,
+    "item_tier": {
+        "max_uses": 19000,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "threecore:silver_ingot"
+        }
+    },
+
+    "abilities": {
+        "unite": {
+            "ability": "threecore:command",
+            "show_in_bar": false,
+            "hidden": false,
+            "title": {
+                "translate": "ability.saber.uniteblade"
+            },
+            "icon": {
+                "type": "threecore:item",
+                "item": "saber:fuusoken_hayate",
+                "count": 1
+            },
+            "bar_color": "light_gray",
+            "additional_data": {},
+            "commands": [
+                "/replaceitem entity @s weapon.mainhand saber:fuusoken_hayate", 
+                "/clear @s saber:fuusoken_hayate_blade",
+                "/playsound minecraft:custom.oneblade master @a ~ ~ ~"
+            ],
+            "conditions": [
+                {
+                    "type": "threecore:wearing_item",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": false,
+                    "needs_key": false,
+                    "mainhand": {
+                        "item": "saber:fuusoken_hayate_blade_main"
+                    },
+                    "offhand": {
+                        "item": "saber:fuusoken_hayate_blade"
+                    }
+                },
+                {
+                    "type": "threecore:action",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true
+                }
+            ]
+        }
+    }
+}

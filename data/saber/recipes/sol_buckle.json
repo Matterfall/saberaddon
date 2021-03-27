@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DD ",
+        "EDD",
+        "DD "
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:silver_ingot"
+        },
+        "E": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "saber:sol_buckle",
+        "count": 1
+    }
+}

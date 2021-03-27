@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FGF",
+        "EEE",
+        "FGF"
+    ],
+    "key": { 
+        "G": {
+            "item": "minecraft:iron_sword"
+        },
+        "E": {
+            "item": "threecore:silver_ingot"
+        },
+        "F": {
+            "item": "threecore:green_fabric"
+        }
+    },
+    "result": {
+        "item": "saber:fuusoken_hayate",
+        "count": 1
+    }
+}

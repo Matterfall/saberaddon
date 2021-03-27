@@ -1,0 +1,133 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "group": "driver_tab_saber",
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		  {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/sol/sol_buckle.png"
+   		  },
+        {
+            "type": "threecore:default",
+            "model": "saber:saber_suits",
+            "texture": {
+            "base": "saber:textures/models/armor/sol/kenzan.png",
+            "transformers": [
+                {
+                  	"type": "threecore:alpha_mask",
+                  	"mask": "saber:textures/models/alpha_masks/calibur/transformation_#TIMER.png"
+                }
+         	  ],
+         	  "variables": {
+               	"TIMER": {
+                  "type": "threecore:integer_nbt",
+                  "nbt_tag": "Kenzan"
+               	}
+            },
+         	  "output": "saber:textures/models/armor/sol/kenzan_#TIMER"
+         	}
+      	},
+      	{
+         	"type": "threecore:default",
+         	"glow": true,
+         	"model": "saber:saber_suits",
+         	"texture": "saber:textures/models/armor/sol/kenzan_glow.png",
+         	"predicates": [
+        		{
+          			"type": "threecore:integer_nbt",
+          			"nbt_tag": "Kenzan",
+          			"value": 29
+        		}
+      		]
+      	}
+    ],
+
+    "abilities": {
+        "kenzan_henshin": {
+         	"ability": "threecore:opening_nbt_timer",
+         	"max_timer": 29,
+         	"icon": {
+            	"type": "threecore:item",
+            	"item": "saber:sol_buckle"
+         	},
+          "bar_color": "green",
+          "nbt_tag": "Kenzan",
+         	"conditions": [
+            	{
+               	"type": "threecore:action",
+               	"enabling": true
+            	},
+            	{
+              	 "type": "threecore:equipment_slot",
+               	 "slot": "chest"
+            	},
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:fuusoken_hayate"
+                }
+              }
+         	]
+      	},
+        "kenzan_sound_1": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+          	"/playsound minecraft:custom.kenzan_henshin master @a ~ ~ ~",
+          	"/replaceitem entity @s weapon.mainhand saber:fuusoken_hayate_blade_main", 
+            "/replaceitem entity @s weapon.offhand saber:fuusoken_hayate_blade"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:ability_enabled",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "ability_id": "kenzan_henshin"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Kenzan",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        }
+   	}
+}
