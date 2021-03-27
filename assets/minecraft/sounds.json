@@ -33,6 +33,21 @@
 		"sounds": [
 			"custom/sabela_henshin"
 		]
+	},
+	"custom.splitblade": {
+		"sounds": [
+			"custom/two_blades"
+		]
+	},
+	"custom.oneblade": {
+		"sounds": [
+			"custom/one_blade"
+		]
+	},
+	"custom.kenzan_henshin": {
+		"sounds": [
+			"custom/kenzan_henshin"
+		]
 	}
 }
 
