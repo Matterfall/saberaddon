@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:gold_ingot"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "item": "threecore:silver_ingot"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        }
+    },
+    "result": {
+        "item": "saber:insect_wrb",
+        "count": 1
+    }
+}
