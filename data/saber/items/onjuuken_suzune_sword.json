@@ -2,7 +2,7 @@
     "type": "threecore:tool",
     "properties": {
 		"max_stack_size": 1,
-		"max_damage": 1900,
+		"max_damage": 1700,
 		"group": "seiken_tab",
 		"rarity": "rare"
 	},
@@ -10,7 +10,7 @@
     "attack_damage": 6,
     "attack_speed": -2.4,
     "item_tier": {
-        "max_uses": 19000,
+        "max_uses": 1700,
         "efficiency": 1,
         "attack_damage": 1,
         "harvest_level": 2,
@@ -21,24 +21,23 @@
     },
 
     "abilities": {
-        "split": {
+        "change_mode": {
             "ability": "threecore:command",
             "show_in_bar": false,
             "hidden": false,
             "title": {
-                "translate": "ability.saber.splitblade"
+                "translate": "ability.saber.changemode"
             },
             "icon": {
                 "type": "threecore:item",
-                "item": "saber:fuusoken_hayate",
+                "item": "saber:onjuuken_suzune_gun",
                 "count": 1
             },
-            "bar_color": "light_gray",
+            "bar_color": "pink",
             "additional_data": {},
             "commands": [
-                "/replaceitem entity @s weapon.mainhand saber:fuusoken_hayate_blade_main", 
-                "/replaceitem entity @s weapon.offhand saber:fuusoken_hayate_blade",
-                "/playsound minecraft:custom.splitblade master @a ~ ~ ~"
+                "/replaceitem entity @s weapon.mainhand saber:onjuuken_suzune_gun",
+                "/playsound minecraft:custom.gunchange master @a ~ ~ ~"
             ],
             "conditions": [
                 {

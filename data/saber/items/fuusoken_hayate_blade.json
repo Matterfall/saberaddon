@@ -6,8 +6,8 @@
 		"rarity": "rare"
 	},
     "tool_type": "sword",
-    "attack_damage": 1,
-    "attack_speed": -1.2,
+    "attack_damage": 6,
+    "attack_speed": -2.4,
     "item_tier": {
         "max_uses": 19000,
         "efficiency": 1,

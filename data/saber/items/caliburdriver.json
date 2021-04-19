@@ -15,59 +15,39 @@
    			    "type": "threecore:default",
    			    "model": "saber:saber_suits",
    			    "texture": "saber:textures/models/armor/calibur/caliburdriver.png"
-   		    },
-          {
-            "type": "threecore:default",
-            "model": "saber:saber_suits",
-            "texture": {
-            "base": "saber:textures/models/armor/calibur/calibur.png",
-            "transformers": [
-                {
-                  	"type": "threecore:alpha_mask",
-                  	"mask": "saber:textures/models/alpha_masks/calibur/transformation_#TIMER.png"
-                }
-         	  ],
-         	  "variables": {
-               	"TIMER": {
-                  "type": "threecore:integer_nbt",
-                  "nbt_tag": "Opening"
-               	}
-            },
-         	  "output": "saber:textures/models/armor/calibur/calibur_#TIMER"
-         	}
-      	},
-      	{
-         	"type": "threecore:default",
-         	"glow": true,
-         	"model": "saber:saber_suits",
-         	"texture": "saber:textures/models/armor/calibur/caliburglow.png",
-         	"predicates": [
-        		{
-          			"type": "threecore:integer_nbt",
-          			"nbt_tag": "Opening",
-          			"value": 29
-        		}
-      		]
-      	}
+   		    }
     ],
 
-    "abilities": {
-        "opening": {
-         	"ability": "threecore:opening_nbt_timer",
-         	"max_timer": 29,
-         	"icon": {
-            	"type": "threecore:item",
-            	"item": "saber:caliburdriver"
-         	},
-         	"conditions": [
-            	{
-               	"type": "threecore:action",
-               	"enabling": true
-            	},
-            	{
-              	 "type": "threecore:equipment_slot",
-               	 "slot": "chest"
-            	},
+    "abilities": { 
+        "jaaku_dragon": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "saber:ankokuken_kurayami",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "purple",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add CaliburStand dummy", 
+            "/scoreboard players set @s CaliburStand 0",
+            "/clear @s saber:jaaku_wrb",
+            "/replaceitem entity @s armor.chest saber:caliburdriver_jaaku"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
               {
                 "type": "threecore:wearing_item",
                 "custom_title": {
@@ -82,83 +62,54 @@
                 "offhand": {
                   "item": "saber:jaaku_wrb"
                 }
-              }
-         	]
-      	},
-        "jaakuannouncement": {
+              } 
+          ] 
+        },
+        "jaou_dragon": {
           "ability": "threecore:command",
-          "show_in_bar": false,
-          "hidden": true,
+          "show_in_bar": true,
+          "hidden": false,
           "title": {
             "translate": "ability.threecore.command"
           },
           "icon": {
-            "item": "minecraft:command_block",
+            "item": "saber:ankokuken_kurayami",
             "count": 1,
             "type": "threecore:item"
           },
-          "bar_color": "light_gray",
+          "bar_color": "purple",
           "additional_data": {},
-          "commands": "/playsound minecraft:custom.jaakudragon master @a ~ ~ ~",
-          "conditions": [ 
-            {
-              "type": "threecore:ability_enabled",
-              "custom_title": {
-                "text": "empty"
-              },
-              "invert": false,
-              "enabling": false,
-              "needs_key": false,
-              "ability_id": "opening"
-            },
-            {
-              "type": "threecore:item_integer_nbt",
-              "custom_title": {
-                "text": "empty"
-              },
-              "invert": false,
-              "enabling": false,
-              "needs_key": false,
-              "slot": "chest",
-              "nbt_tag": "Opening",
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        "example_ability": {
-          "ability": "threecore:attribute_modifier",
-          "show_in_bar": false,
-          "hidden": true,
-          "title": {
-            "translate": "ability.threecore.attribute_modifier"
-          },
-          "icon": {
-            "item": "minecraft:barrier",
-            "count": 1,
-            "type": "threecore:item"
-          },
-          "bar_color": "light_gray",
-          "additional_data": {},
-          "attribute": "minecraft:generic.armor",
-          "amount": 12,
-          "operation": 0,
-          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "commands": [
+            "/scoreboard objectives add CaliburJaouStand dummy", 
+            "/scoreboard players set @s CaliburJaouStand 0",
+            "/clear @s saber:jaou_wrb",
+            "/replaceitem entity @s armor.chest saber:caliburdriver_jaou"
+          ],
           "conditions": [
-            {
-              "type": "threecore:item_integer_nbt",
-              "custom_title": {
-                "text": "empty"
+              {
+                "type": "threecore:action",
+                "enabling": true
               },
-              "invert": false,
-              "enabling": false,
-              "needs_key": false,
-              "slot": "chest",
-              "nbt_tag": "Opening",
-              "min": 20,
-              "max": 29
-            }
-          ]
-      }
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:ankokuken_kurayami"
+                },
+                "offhand": {
+                  "item": "saber:jaou_wrb"
+                }
+              } 
+          ] 
+        }
    	}
 }

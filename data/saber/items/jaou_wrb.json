@@ -13,21 +13,21 @@
     		"show_in_bar": true,
     		"hidden": false,
     		"title": {
-      			"translate": "ability.threecore.command"
+      			"translate": "ability.saber.name"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaoudragon.png",
+      			"texture": "saber:textures/item/books/jaou_dragon.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
       			"height": 16,
-      			"texture_width": 72,
-      			"texture_height": 72,
+      			"texture_width": 16,
+      			"texture_height": 16,
       			"type": "threecore:texture"
     		},
     		"bar_color": "purple",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaouname master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.jaou_name master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",
@@ -49,42 +49,27 @@
             "needs_key": true
           }
         ]
-    	},
-      "jaakuname": {
-        "ability": "threecore:dummy",
-        "show_in_bar": false,
-        "hidden": false,
-        "title": {
-          "translate": "ability.threecore.dummy"
-        },
-        "icon": {
-          "item": "minecraft:barrier",
-          "count": 1,
-          "type": "threecore:item"
-        },
-        "bar_color": "light_gray",
-        "additional_data": {}
-      }, 
+    	}, 
     	"description": {
     		"ability": "threecore:command",
     		"show_in_bar": true,
     		"hidden": false,
     		"title": {
-      			"translate": "ability.threecore.command"
+      			"translate": "ability.saber.story"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaoudragon_page.png",
+      			"texture": "saber:textures/item/books/jaou_dragon.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
       			"height": 16,
-      			"texture_width": 256,
-      			"texture_height": 256,
+      			"texture_width": 16,
+      			"texture_height": 16,
       			"type": "threecore:texture"
     		},
     		"bar_color": "purple",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaoudescription master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.jaou_story master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",

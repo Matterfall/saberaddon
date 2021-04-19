@@ -1,0 +1,449 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/calibur/caliburdriver.png"
+   		    },
+          {
+            "type": "threecore:default",
+            "model": "saber:saber_suits",
+            "texture": {
+            "base": "saber:textures/models/armor/calibur/caliburjaou.png",
+            "transformers": [
+                {
+                  	"type": "threecore:alpha_mask",
+                  	"mask": "saber:textures/models/alpha_masks/calibur/transformation_#TIMER.png"
+                }
+         	  ],
+         	  "variables": {
+               	"TIMER": {
+                  "type": "threecore:integer_nbt",
+                  "nbt_tag": "CaliburJaou"
+               	}
+            },
+         	  "output": "saber:textures/models/armor/calibur/caliburjaou_#TIMER"
+         	}
+      	},
+      	{
+         	"type": "threecore:default",
+         	"glow": true,
+         	"model": "saber:saber_suits",
+         	"texture": "saber:textures/models/armor/calibur/caliburjaou_glow.png",
+         	"predicates": [
+        		{
+          			"type": "threecore:integer_nbt",
+          			"nbt_tag": "CaliburJaou",
+          			"value": 29
+        		}
+      		]
+      	},
+        {
+          "type": "threecore:cape",
+          "texture": "saber:textures/models/armor/calibur/jaou_cape.png",
+          "allow_supporter_cloak_override": false,
+          "predicates": [
+            {
+              "type": "threecore:integer_nbt",
+              "nbt_tag": "CaliburJaou",
+              "value": 29
+            }
+          ]
+        }
+    ],
+
+    "abilities": {
+        "calibur_sound_standby": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard players add @s CaliburJaouStand 1",
+            "/scoreboard players set @s[scores={CaliburJaouStand=116}] CaliburJaouStand 38",
+            "/execute at @s[scores={CaliburJaouStand=0..1}] run playsound minecraft:custom.jaou_read master @a ~ ~ ~",
+            "/execute at @s[scores={CaliburJaouStand=38}] run playsound minecraft:custom.jaou_standby master @a ~ ~ ~"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        "opening": {
+         	"ability": "threecore:opening_nbt_timer",
+         	"max_timer": 29,
+         	"icon": {
+            	"type": "threecore:item",
+            	"item": "saber:caliburdriver"
+         	},
+          "bar_color": "purple",
+          "nbt_tag": "CaliburJaou",
+         	"conditions": [
+            	{
+               	"type": "threecore:action",
+               	"enabling": true
+            	},
+            	{
+              	 "type": "threecore:equipment_slot",
+               	 "slot": "chest"
+            	},
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:ankokuken_kurayami"
+                }
+              },
+              {
+                "type": "threecore:item_integer_nbt",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "slot": "chest",
+                "nbt_tag": "CaliburJaou",
+                "min": 0,
+                "max": 1
+              }
+         	]
+      	},
+        "jaou_announcement": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/playsound minecraft:custom.jaou_dragon master @a ~ ~ ~",
+            "/stopsound @a master minecraft:custom.jaou_standby"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:ability_enabled",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "ability_id": "opening"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        "damage_value": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor",
+          "amount": 18,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 20,
+              "max": 29
+            }
+          ]
+        },
+        "calibur_health": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.max_health",
+          "amount": 7,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 25,
+              "max": 29
+            }
+          ]
+        },
+        "calibur_resistance": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor_toughness",
+          "amount": 13,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 25,
+              "max": 29
+            }
+          ]
+        },
+        "sword_sealing": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.sealing"
+          },
+          "icon": {
+            "item": "saber:mumeiken_kyomu_sealed",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "purple",
+          "additional_data": {},
+          "commands": [
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:eneiken_noroshi'}}, distance=..5] weapon.mainhand saber:eneiken_noroshi_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:fuusoken_hayate'}}, distance=..5] weapon.mainhand saber:fuusoken_hayate_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:fuusoken_hayate_blade_main'}}, distance=..5] weapon.mainhand saber:fuusoken_hayate_blade_main_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:mumeiken_kyomu'}}, distance=..5] weapon.mainhand saber:mumeiken_kyomu_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:onjuuken_suzune_gun'}}, distance=..5] weapon.mainhand saber:onjuuken_suzune_gun_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'saber:onjuuken_suzune_sword'}}, distance=..5] weapon.mainhand saber:onjuuken_suzune_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:diamond_sword'}}, distance=..5] weapon.mainhand saber:diamond_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:diamond_axe'}}, distance=..5] weapon.mainhand saber:diamond_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:diamond_hoe'}}, distance=..5] weapon.mainhand saber:diamond_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:diamond_pickaxe'}}, distance=..5] weapon.mainhand saber:diamond_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:diamond_shovel'}}, distance=..5] weapon.mainhand saber:diamond_shovel_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:golden_sword'}}, distance=..5] weapon.mainhand saber:golden_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:golden_axe'}}, distance=..5] weapon.mainhand saber:golden_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:golden_hoe'}}, distance=..5] weapon.mainhand saber:golden_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:golden_pickaxe'}}, distance=..5] weapon.mainhand saber:golden_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:golden_shovel'}}, distance=..5] weapon.mainhand saber:golden_shovel_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:netherite_sword'}}, distance=..5] weapon.mainhand saber:netherite_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:netherite_axe'}}, distance=..5] weapon.mainhand saber:netherite_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:netherite_hoe'}}, distance=..5] weapon.mainhand saber:netherite_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:netherite_pickaxe'}}, distance=..5] weapon.mainhand saber:netherite_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:netherite_shovel'}}, distance=..5] weapon.mainhand saber:netherite_shovel_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:iron_sword'}}, distance=..5] weapon.mainhand saber:iron_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:iron_axe'}}, distance=..5] weapon.mainhand saber:iron_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:iron_hoe'}}, distance=..5] weapon.mainhand saber:iron_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:iron_pickaxe'}}, distance=..5] weapon.mainhand saber:iron_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:iron_shovel'}}, distance=..5] weapon.mainhand saber:iron_shovel_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:stone_sword'}}, distance=..5] weapon.mainhand saber:stone_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:stone_axe'}}, distance=..5] weapon.mainhand saber:stone_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:stone_hoe'}}, distance=..5] weapon.mainhand saber:stone_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:stone_pickaxe'}}, distance=..5] weapon.mainhand saber:stone_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:stone_shovel'}}, distance=..5] weapon.mainhand saber:stone_shovel_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:wooden_sword'}}, distance=..5] weapon.mainhand saber:wooden_sword_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:wooden_axe'}}, distance=..5] weapon.mainhand saber:wooden_axe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:wooden_hoe'}}, distance=..5] weapon.mainhand saber:wooden_hoe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:wooden_pickaxe'}}, distance=..5] weapon.mainhand saber:wooden_pickaxe_sealed",
+            "/replaceitem entity @a[nbt={SelectedItem:{id:'minecraft:wooden_shovel'}}, distance=..5] weapon.mainhand saber:wooden_shovel_sealed",
+            
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:eneiken_noroshi'}]}, distance=..5] weapon.mainhand saber:eneiken_noroshi_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:fuusoken_hayate'}]}, distance=..5] weapon.mainhand saber:fuusoken_hayate_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:fuusoken_hayate_blade_main'}]}, distance=..5] weapon.mainhand saber:fuusoken_hayate_blade_main_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:mumeiken_kyomu'}]}, distance=..5] weapon.mainhand saber:mumeiken_kyomu_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:onjuuken_suzune_gun'}]}, distance=..5] weapon.mainhand saber:onjuuken_suzune_gun_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'saber:onjuuken_suzune_sword'}]}, distance=..5] weapon.mainhand saber:onjuuken_suzune_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:diamond_sword'}]}, distance=..5] weapon.mainhand saber:diamond_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:diamond_axe'}]}, distance=..5] weapon.mainhand saber:diamond_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:diamond_hoe'}]}, distance=..5] weapon.mainhand saber:diamond_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:diamond_pickaxe'}]}, distance=..5] weapon.mainhand saber:diamond_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:diamond_shovel'}]}, distance=..5] weapon.mainhand saber:diamond_shovel_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:golden_sword'}]}, distance=..5] weapon.mainhand saber:golden_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:golden_axe'}]}, distance=..5] weapon.mainhand saber:golden_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:golden_hoe'}]}, distance=..5] weapon.mainhand saber:golden_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:golden_pickaxe'}]}, distance=..5] weapon.mainhand saber:golden_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:golden_shovel'}]}, distance=..5] weapon.mainhand saber:golden_shovel_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:netherite_sword'}]}, distance=..5] weapon.mainhand saber:netherite_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:netherite_axe'}]}, distance=..5] weapon.mainhand saber:netherite_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:netherite_hoe'}]}, distance=..5] weapon.mainhand saber:netherite_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:netherite_pickaxe'}]}, distance=..5] weapon.mainhand saber:netherite_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:netherite_shovel'}]}, distance=..5] weapon.mainhand saber:netherite_shovel_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:iron_sword'}]}, distance=..5] weapon.mainhand saber:iron_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:iron_axe'}]}, distance=..5] weapon.mainhand saber:iron_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:iron_hoe'}]}, distance=..5] weapon.mainhand saber:iron_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:iron_pickaxe'}]}, distance=..5] weapon.mainhand saber:iron_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:iron_shovel'}]}, distance=..5] weapon.mainhand saber:iron_shovel_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:stone_sword'}]}, distance=..5] weapon.mainhand saber:stone_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:stone_axe'}]}, distance=..5] weapon.mainhand saber:stone_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:stone_hoe'}]}, distance=..5] weapon.mainhand saber:stone_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:stone_pickaxe'}]}, distance=..5] weapon.mainhand saber:stone_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:stone_shovel'}]}, distance=..5] weapon.mainhand saber:stone_shovel_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:wooden_sword'}]}, distance=..5] weapon.mainhand saber:wooden_sword_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:wooden_axe'}]}, distance=..5] weapon.mainhand saber:wooden_axe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:wooden_hoe'}]}, distance=..5] weapon.mainhand saber:wooden_hoe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:wooden_pickaxe'}]}, distance=..5] weapon.mainhand saber:wooden_pickaxe_sealed",
+            "/replaceitem entity @e[nbt={HandItems:[{id:'minecraft:wooden_shovel'}]}, distance=..5] weapon.mainhand saber:wooden_shovel_sealed"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 28,
+              "max": 29
+            },
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            }
+          ]
+        },
+        "calibur_revert": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.revert"
+          },
+          "icon": {
+            "item": "saber:caliburdriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "purple",
+          "additional_data": {},
+          "commands": [
+            "/replaceitem entity @s armor.chest saber:caliburdriver",
+            "/give @s saber:jaou_wrb"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "CaliburJaou",
+              "min": 28,
+              "max": 29
+            },
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            }
+          ]
+        }
+   	}
+}

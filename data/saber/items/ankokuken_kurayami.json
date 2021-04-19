@@ -2,13 +2,13 @@
     "type": "threecore:tool",
     "properties": {
 		"max_stack_size": 1,
-		"max_damage": 19000,
+		"max_damage": 1900,
 		"group": "seiken_tab",
 		"rarity": "rare"
 	},
     "tool_type": "sword",
-    "attack_damage": 3,
-    "attack_speed": 1.2,
+    "attack_damage": 7,
+    "attack_speed": -2.3,
     "item_tier": {
         "max_uses": 19000,
         "efficiency": 1,

@@ -16,7 +16,7 @@
       			"translate": "ability.saber.name"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaaku_dragon.png",
+      			"texture": "saber:textures/item/books/bremen_rockband.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
@@ -27,7 +27,7 @@
     		},
     		"bar_color": "purple",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaakuname master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.bremen_name master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",
@@ -58,7 +58,7 @@
       			"translate": "ability.saber.story"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaaku_dragon.png",
+      			"texture": "saber:textures/item/books/bremen_rockband.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
@@ -69,7 +69,7 @@
     		},
     		"bar_color": "purple",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaakudescription master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.bremen_story master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",

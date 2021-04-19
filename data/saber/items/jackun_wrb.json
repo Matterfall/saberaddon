@@ -16,7 +16,7 @@
       			"translate": "ability.saber.name"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaaku_dragon.png",
+      			"texture": "saber:textures/item/books/jackun_domamenoki.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
@@ -25,9 +25,9 @@
       			"texture_height": 16,
       			"type": "threecore:texture"
     		},
-    		"bar_color": "purple",
+    		"bar_color": "green",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaakuname master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.jackun_name master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",
@@ -58,7 +58,7 @@
       			"translate": "ability.saber.story"
     		},
     		"icon": {
-      			"texture": "saber:textures/item/books/jaaku_dragon.png",
+      			"texture": "saber:textures/item/books/jackun_domamenoki.png",
       			"u": 0,
       			"v": 0,
       			"width": 16,
@@ -67,9 +67,9 @@
       			"texture_height": 16,
       			"type": "threecore:texture"
     		},
-    		"bar_color": "purple",
+    		"bar_color": "green",
     		"additional_data": {},
-    		"commands": "/playsound minecraft:custom.jaakudescription master @a ~ ~ ~",
+    		"commands": "/playsound minecraft:custom.jackun_story master @a ~ ~ ~",
         "conditions": [
           {
             "type": "threecore:equipment_slot",

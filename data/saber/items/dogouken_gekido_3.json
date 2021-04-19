@@ -1,0 +1,87 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 2000, 
+		"rarity": "rare"
+	},
+    "tool_type": "sword",
+    "attack_damage": 8,
+    "attack_speed": -3.2,
+    "item_tier": {
+        "max_uses": 2000,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "threecore:silver_ingot"
+        }
+    },
+
+    "abilities": {
+        "slash_sound_standby": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard players add @s BusterFinisher 1",
+            "/scoreboard players set @s[scores={BusterFinisher=158}] BusterFinisher 90",
+            "/execute at @s[scores={BusterFinisher=0..1}] run playsound minecraft:custom.buster_pre_finisher_3 master @a ~ ~ ~",
+            "/execute at @s[scores={BusterFinisher=90..91}] run playsound minecraft:custom.buster_finisher_standby master @a ~ ~ ~"
+          ]
+        },
+        "finisher": {
+            "ability": "threecore:command",
+            "show_in_bar": true,
+            "hidden": false,
+            "title": {
+                "translate": "ability.saber.finisher"
+            },
+            "icon": {
+                "type": "threecore:item",
+                "item": "saber:dogouken_gekido",
+                "count": 1
+            },
+            "bar_color": "light_gray",
+            "additional_data": {},
+            "commands": [
+                "/stopsound @a master minecraft:custom.buster_finisher_standby",
+                "/playsound minecraft:custom.buster_finisher_3 master @a ~ ~ ~",
+                "/effect give @e[distance=1..6] minecraft:wither 6 7 true",
+                "/replaceitem entity @s weapon.mainhand saber:dogouken_gekido"
+            ],
+            "conditions": [
+                {
+                    "type": "threecore:equipment_slot",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true,
+                    "slot": "mainhand"
+                },
+                {
+                    "type": "threecore:action",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true
+                }
+            ]
+        }
+    }
+}

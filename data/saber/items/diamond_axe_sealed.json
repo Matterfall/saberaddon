@@ -2,21 +2,20 @@
     "type": "threecore:tool",
     "properties": {
 		"max_stack_size": 1,
-		"max_damage": 2500,
-		"group": "seiken_tab",
-		"rarity": "rare"
+		"max_damage": 1561,
+		"rarity": "common"
 	},
     "tool_type": "sword",
-    "attack_damage": 7,
-    "attack_speed": -2.3,
+    "attack_damage": -6,
+    "attack_speed": -2.4,
     "item_tier": {
-        "max_uses": 2500,
+        "max_uses": 1561,
         "efficiency": 1,
         "attack_damage": 1,
         "harvest_level": 2,
         "enchantibility": 5,
         "repair_material": {
-            "item": "saber:phoenix_feather"
+            "item": "minecraft:diamond"
         }
     }
 }
