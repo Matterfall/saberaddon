@@ -10,17 +10,17 @@
             "tag": "forge:ingots/silver"
         },
         "G": {
-            "item": "minecraft:ender_eye"
+            "item": "minecraft:obsidian"
         },
         "E": {
             "item": "saber:blank_seiken"
         },
         "F": {
-            "item": "minecraft:gold_ingot"
+            "tag": "forge:ingots/steel"
         }
     },
     "result": {
-        "item": "saber:ankokuken_kurayami",
+        "item": "saber:dogouken_gekido",
         "count": 1
     }
 }

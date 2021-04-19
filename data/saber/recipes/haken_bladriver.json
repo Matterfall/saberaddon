@@ -10,7 +10,7 @@
             "item": "threecore:black_fabric"
         },
         "#": {
-            "item": "threecore:silver_ingot"
+            "tag": "forge:ingots/silver"
         },
         "E": {
             "item": "saber:phoenix_feather"

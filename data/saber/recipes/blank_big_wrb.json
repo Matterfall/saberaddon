@@ -10,7 +10,7 @@
             "item": "saber:blank_wrb"
         },
         "E": {
-            "item": "threecore:silver_ingot"
+            "tag": "forge:ingots/silver"
         },
         "F": {
             "item": "minecraft:book"

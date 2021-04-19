@@ -6,21 +6,21 @@
         "DGD"
     ],
     "key": {
-        "D": {
+        "F": {
             "tag": "forge:ingots/silver"
         },
         "G": {
-            "item": "minecraft:ender_eye"
+            "item": "minecraft:blaze_rod"
         },
         "E": {
             "item": "saber:blank_seiken"
         },
-        "F": {
-            "item": "minecraft:gold_ingot"
+        "D": {
+            "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "saber:ankokuken_kurayami",
+        "item": "saber:kaenken_rekka",
         "count": 1
     }
 }

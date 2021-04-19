@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "DDD",
+        "DFD",
         "DED",
         "#G#"
     ],
     "key": {
         "D": {
-            "item": "threecore:purple_fabric"
+            "item": "threecore:light_blue_fabric"
         },
         "G": {
             "item": "threecore:advanced_circuit"
@@ -17,10 +17,13 @@
         },
         "E": {
             "item": "saber:blank_wrb"
+        },
+        "F": {
+            "item": "minecraft:writable_book"
         }
     },
     "result": {
-        "item": "saber:jaaku_wrb",
+        "item": "saber:peter_wrb",
         "count": 1
     }
 }

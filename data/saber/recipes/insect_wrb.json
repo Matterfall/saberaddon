@@ -13,7 +13,7 @@
             "item": "threecore:advanced_circuit"
         },
         "#": {
-            "item": "threecore:silver_ingot"
+            "tag": "forge:ingots/silver"
         },
         "E": {
             "item": "saber:blank_wrb"

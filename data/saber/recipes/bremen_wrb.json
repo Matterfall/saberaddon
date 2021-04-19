@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "DDD",
+        "DFD",
         "DED",
         "#G#"
     ],
@@ -17,10 +17,13 @@
         },
         "E": {
             "item": "saber:blank_wrb"
+        },
+        "F": {
+            "item": "minecraft:note_block"
         }
     },
     "result": {
-        "item": "saber:jaaku_wrb",
+        "item": "saber:bremen_wrb",
         "count": 1
     }
 }

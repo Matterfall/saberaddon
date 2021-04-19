@@ -7,7 +7,7 @@
     ],
     "key": {
         "D": {
-            "item": "threecore:purple_fabric"
+            "item": "threecore:blue_fabric"
         },
         "G": {
             "item": "threecore:advanced_circuit"
@@ -20,7 +20,7 @@
         }
     },
     "result": {
-        "item": "saber:jaaku_wrb",
+        "item": "saber:lion_wrb",
         "count": 1
     }
 }

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DAD",
+        "SEF",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:purple_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "item": "saber:alter_ridebook"
+        },
+        "E": {
+            "item": "saber:blank_big_wrb"
+        },
+        "A": {
+            "item": "saber:journey_wrb"
+        },
+        "S": {
+            "item": "saber:pegasus_wrb"
+        },
+        "F": {
+            "item": "saber:hedgehog_wrb"
+        }
+    },
+    "result": {
+        "item": "saber:jaou_wrb",
+        "count": 1
+    }
+}

@@ -2,22 +2,28 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "FGF",
-        "EEE",
-        "FGF"
+        "LEL",
+        "FRF"
     ],
     "key": { 
         "G": {
             "item": "saber:blank_seiken"
         },
-        "E": {
+        "L": {
             "tag": "forge:ingots/silver"
         },
         "F": {
-            "item": "threecore:green_fabric"
+            "item": "threecore:magenta_fabric"
+        },
+        "E": {
+            "item": "threecore:circuit"
+        },
+        "R": {
+            "item": "minecraft:crossbow"
         }
     },
     "result": {
-        "item": "saber:fuusoken_hayate",
+        "item": "saber:onjuuken_suzune_sword",
         "count": 1
     }
 }

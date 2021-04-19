@@ -1,0 +1,32 @@
+{
+  "type": "threecore:chestplate_crafting",
+  "pattern": [
+    "BBBBB",
+    "BIIIB",
+    "BIEEB",
+    "IEI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/silver"
+    },
+    "B": {
+      "item": "threecore:black_fabric"
+    },
+    "E": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "tool": {
+    "type": "threecore:tool",
+    "tool": "hammer"
+  },
+  "consumes_tool": false,
+  "result": {
+    "item": "saber:seiken_swordriver",
+    "count": 1,
+    "nbt": {
+      "Damage": 0
+    }
+  }
+}

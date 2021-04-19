@@ -4,7 +4,7 @@
       "item": "minecraft:book" 
   },
   "cast": {
-    "item": "threecore:silver_ingot" 
+    "tag": "forge:ingots/silver" 
   },
   "experience": 0.2,
   "energy": 250,

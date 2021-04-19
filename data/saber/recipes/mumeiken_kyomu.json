@@ -10,10 +10,10 @@
             "item": "saber:phoenix_feather"
         },
         "E": {
-            "item": "minecraft:netherite_sword"
+            "item": "saber:blank_seiken"
         },
         "F": {
-            "item": "threecore:steel_ingot"
+            "tag": "forge:ingots/steel"
         }
     },
     "result": {

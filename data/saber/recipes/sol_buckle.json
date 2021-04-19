@@ -7,7 +7,7 @@
     ],
     "key": {
         "D": {
-            "item": "threecore:silver_ingot"
+            "tag": "forge:ingots/silver"
         },
         "E": {
             "item": "minecraft:gold_ingot"
