@@ -1,0 +1,93 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 1, 
+		"rarity": "rare"
+	},
+
+	"abilities": {
+      "primitive_sound_standby": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard players add @s PrimitiveStand 1",
+            "/scoreboard players set @s[scores={PrimitiveStand=35}] PrimitiveStand 0",
+            "/execute as @s[scores={PrimitiveStand=1}] run playsound minecraft:custom.primitive_book_standby master @a ~ ~ ~"
+          ]
+      },
+      "accept_book": {
+        "ability": "threecore:command",
+        "show_in_bar": true,
+        "hidden": false,
+        "title": {
+            "translate": "ability.saber.insert"
+        },
+        "icon": {
+            "texture": "saber:textures/item/books/primitive_dragon_open_brave.png",
+            "u": 0,
+            "v": 0,
+            "width": 16,
+            "height": 16,
+            "texture_width": 16,
+            "texture_height": 16,
+            "type": "threecore:texture"
+        },
+        "bar_color": "black",
+        "additional_data": {},
+        "commands": [ 
+          "/playsound minecraft:custom.primitive_get master @a ~ ~ ~",
+          "/stopsound @a master minecraft:custom.primitive_book_standby",
+          "/clear @s saber:brave_wrb", 
+          "/replaceitem entity @s weapon.mainhand saber:primitive_wrb_brave"
+        ],
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          },
+          {
+            "type": "threecore:wearing_item",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": false,
+            "needs_key": false,
+            "mainhand": {
+              "item": "saber:primitive_wrb_open"
+            },
+            "offhand": {
+              "item": "saber:brave_wrb"
+            }
+          }
+        ]
+      }
+  	}
+}

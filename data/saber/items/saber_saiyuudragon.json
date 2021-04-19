@@ -1,0 +1,360 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {  
+      "rarity": "rare"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/saber/bravedragon.png"
+   		    },
+          {
+            "type": "threecore:default",
+            "model": "saber:saber_suits",
+            "texture": {
+            "base": "saber:textures/models/armor/saber/saiyuudragon.png",
+            "transformers": [
+                {
+                  	"type": "threecore:alpha_mask",
+                  	"mask": "saber:textures/models/alpha_masks/calibur/transformation_#TIMER.png"
+                }
+         	  ],
+         	  "variables": {
+               	"TIMER": {
+                  "type": "threecore:integer_nbt",
+                  "nbt_tag": "SaberJourney"
+               	}
+            },
+         	  "output": "saber:textures/models/armor/saber/saiyuudragon_#TIMER"
+         	}
+      	},
+      	{
+         	"type": "threecore:default",
+         	"glow": true,
+         	"model": "saber:saber_suits",
+         	"texture": "saber:textures/models/armor/saber/saberglow.png",
+         	"predicates": [
+        		{
+          			"type": "threecore:integer_nbt",
+          			"nbt_tag": "SaberJourney",
+          			"value": 29
+        		}
+      		]
+      	}
+    ],
+
+    "abilities": {
+      "saber_sound_standby": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard players add @s SaberStand 1",
+            "/scoreboard players set @s[scores={SaberStand=93}] SaberStand 25",
+            "/execute at @s[scores={SaberStand=0..1}] run playsound minecraft:custom.book_insert master @a ~ ~ ~",
+            "/execute at @s[scores={SaberStand=25}] run playsound minecraft:custom.saber_standby master @a ~ ~ ~"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        "journey_henshin": {
+         	"ability": "threecore:opening_nbt_timer",
+         	"max_timer": 29,
+         	"icon": {
+            	"type": "threecore:item",
+            	"item": "saber:seiken_swordriver"
+         	},
+          "bar_color": "red",
+          "nbt_tag": "SaberJourney",
+         	"conditions": [
+            	{
+               	"type": "threecore:action",
+               	"enabling": true
+            	},
+            	{
+              	 "type": "threecore:equipment_slot",
+               	 "slot": "chest"
+            	},
+              {
+                "type": "threecore:item_integer_nbt",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "slot": "chest",
+                "nbt_tag": "SaberJourney",
+                "min": 0,
+                "max": 1
+              }
+         	]
+      	},
+      	"journey_announcement": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/playsound minecraft:custom.sword_remove master @a ~ ~ ~",
+            "/playsound minecraft:custom.saiyuu_dragon master @a ~ ~ ~",
+            "/stopsound @a master minecraft:custom.saber_standby", 
+            "/particle minecraft:falling_lava ~ ~ ~ 1 0.1 1 0 1000 force",
+            "/give @s saber:kaenken_rekka"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:ability_enabled",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "ability_id": "journey_henshin"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        "saber_durability": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor",
+          "amount": 17,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 25,
+              "max": 29
+            }
+          ]
+        },
+        "saber_health": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.max_health",
+          "amount": 5,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 25,
+              "max": 29
+            }
+          ]
+        },
+        "saber_resistance": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor_toughness",
+          "amount": 5,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 25,
+              "max": 29
+            }
+          ]
+        },
+        "crimson_dragon": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:seiken_swordriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "red",
+          "additional_data": {},
+          "commands": [ 
+            "/stopsound @a master minecraft:custom.saber_standby",
+            "/scoreboard players set @s SaberStand 0",
+            "/clear @s saber:eagle_wrb",
+            "/clear @s saber:kaenken_rekka",
+            "/replaceitem entity @s armor.chest saber:saber_crimsondragon"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:eagle_wrb"
+                }
+              }
+          ]
+        },
+        "saber": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.revert"
+          },
+          "icon": {
+            "item": "saber:seiken_swordriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/replaceitem entity @s armor.chest saber:seiken_swordriver",
+            "/give @s saber:brave_wrb",
+            "/give @s saber:journey_wrb"
+          ],
+          "conditions": [ 
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "SaberJourney",
+              "min": 28,
+              "max": 29
+            },
+            {
+              "type": "threecore:action",
+              "enabling": true
+            },
+            {
+              "type": "threecore:equipment_slot",
+              "slot": "chest"
+            }
+          ]
+        }
+   	}
+}
