@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "saber:item/books/blank_big_wrb"
+		"layer0": "saber:item/books/brave_dragon"
 	}
 }

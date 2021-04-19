@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "saber:item/slash/onjuuken_suzune_gun_sealed"
+  }
+}
