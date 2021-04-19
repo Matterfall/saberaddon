@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:raimeiken_ikazuchi"
+        },
+        "title": {
+            "translate": "saber.advancements.raimeiken_ikazuchi"
+        },
+        "description": {
+            "translate": "saber.advancements.raimeiken_ikazuchi.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "parent": "saber:good/seiken_swordriver",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:raimeiken_ikazuchi"
+                    }
+                ]
+            }
+        }
+    }
+}

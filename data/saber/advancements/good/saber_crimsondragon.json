@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:crimson_face"
+        },
+        "title": {
+            "translate": "saber.advancements.crimsondragon"
+        },
+        "description": {
+            "translate": "saber.advancements.crimsondragon.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "saber:good/kaenken_rekka",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:saber_crimsondragon"
+                    }
+                ]
+            }
+        }
+    }
+}

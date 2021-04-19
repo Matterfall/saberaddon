@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:seiken_swordriver"
+        },
+        "title": {
+            "translate": "saber.advancements.seiken_swordriver"
+        },
+        "description": {
+            "translate": "saber.advancements.seiken_swordriver.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "parent": "saber:good/root",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:seiken_swordriver"
+                    }
+                ]
+            }
+        }
+    }
+}

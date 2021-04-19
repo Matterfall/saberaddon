@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:suiseiken_nagare"
+        },
+        "title": {
+            "translate": "saber.advancements.suiseiken_nagare"
+        },
+        "description": {
+            "translate": "saber.advancements.suiseiken_nagare.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "parent": "saber:good/seiken_swordriver",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:suiseiken_nagare"
+                    }
+                ]
+            }
+        }
+    }
+}

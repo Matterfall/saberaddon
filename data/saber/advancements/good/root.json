@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "saber:blank_wrb"
+    },
+    "title": {
+      "translate": "advancements.saber.root.title"
+    },
+    "description": {
+      "translate": "advancements.saber.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/ice.png"
+  },
+  "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:book"
+                    }
+                ]
+            }
+        }
+    }
+}
