@@ -80,8 +80,8 @@
             },
             {
                 "condition": "random_chance_with_looting",
-                "chance": 0.002,
-                "looting_multiplier": 0.003
+                "chance": 0.015,
+                "looting_multiplier": 0.03
             }
           ],
           "name": "saber:phoenix_feather"
