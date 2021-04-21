@@ -1,0 +1,473 @@
+{ 
+	"custom.book_insert": {
+		"sounds": [
+			"custom/book_insert"
+		]
+	},
+	"custom.big_book_insert": {
+		"sounds": [
+			"custom/big_book_insert"
+		]
+	},
+	"custom.sword_insert": {
+		"sounds": [
+			"custom/sword_insert"
+		]
+	},
+	"custom.sword_remove": {
+		"sounds": [
+			"custom/sword_remove"
+		]
+	},
+	"custom.saber_standby": {
+		"sounds": [
+			"custom/saber_standby"
+		]
+	},
+	"custom.brave_dragon": {
+		"sounds": [
+			"custom/brave_dragon"
+		]
+	},
+	"custom.dragon_eagle": {
+		"sounds": [
+			"custom/dragon_eagle"
+		]
+	},
+	"custom.saiyuu_dragon": {
+		"sounds": [
+			"custom/saiyuu_dragon"
+		]
+	},
+	"custom.crimson_dragon": {
+		"sounds": [
+			"custom/crimson_dragon"
+		]
+	},
+	"custom.draconic_name": {
+		"sounds": [
+			"custom/draconic_name"
+		]
+	},
+	"custom.draconic_story": {
+		"sounds": [
+			"custom/draconic_story"
+		]
+	},
+	"custom.draconic_knight": {
+		"sounds": [
+			"custom/draconic_knight"
+		]
+	},
+	"custom.primitive_name": {
+		"sounds": [
+			"custom/primitive_name"
+		]
+	},
+	"custom.primitive_story": {
+		"sounds": [
+			"custom/primitive_story_1",
+			"custom/primitive_story_2",
+			"custom/primitive_story_3"
+		]
+	},
+	"custom.primitive_get": {
+		"sounds": [
+			"custom/primitive_get"
+		]
+	},
+	"custom.primitive_book_standby": {
+		"sounds": [
+			"custom/primitive_book_standby"
+		]
+	},
+	"custom.primitive_henshin_standby": {
+		"sounds": [
+			"custom/primitive_henshin_standby"
+		]
+	},
+	"custom.espada_standby": {
+		"sounds": [
+			"custom/espada_standby"
+		]
+	},
+	"custom.lampdoalangina": {
+		"sounds": [
+			"custom/lampdoalangina"
+		]
+	},
+	"custom.lampdohedgehog": {
+		"sounds": [
+			"custom/lampdohedgehog"
+		]
+	},
+	"custom.lampdocerberus": {
+		"sounds": [
+			"custom/lampdocerberus"
+		]
+	},
+	"custom.goldenalangina": {
+		"sounds": [
+			"custom/goldenalangina"
+		]
+	},
+	"custom.blades_standby": {
+		"sounds": [
+			"custom/blades_standby"
+		]
+	},
+	"custom.lion_senki": {
+		"sounds": [
+			"custom/lion_senki"
+		]
+	},
+	"custom.lion_fantasista": {
+		"sounds": [
+			"custom/lion_fantasista"
+		]
+	},
+	"custom.lion_pegasus": {
+		"sounds": [
+			"custom/lion_pegasus"
+		]
+	},
+	"custom.fantastic_lion": {
+		"sounds": [
+			"custom/fantastic_lion"
+		]
+	},
+	"custom.jaakuname": {
+		"sounds": [
+			"custom/jaakuname"
+		]
+	},
+	"custom.jaakudescription": {
+		"sounds": [
+			"custom/jaakudescription"
+		]
+	},
+	"custom.jaaku_read": {
+		"sounds": [
+			"custom/jaaku_read"
+		]
+	},
+	"custom.calibur_standby": {
+		"sounds": [
+			"custom/calibur_standby"
+		]
+	},
+	"custom.jaou_name": {
+		"sounds": [
+			"custom/jaou_name"
+		]
+	},
+	"custom.jaou_story": {
+		"sounds": [
+			"custom/jaou_story_1",
+			"custom/jaou_story_2",
+			"custom/jaou_story_3"
+		]
+	},
+	"custom.jaou_read": {
+		"sounds": [
+			"custom/jaou_read"
+		]
+	},
+	"custom.jaou_standby": {
+		"sounds": [
+			"custom/jaou_standby"
+		]
+	},
+	"custom.jaou_dragon": {
+		"sounds": [
+			"custom/jaou_dragon"
+		]
+	},
+	"custom.jaakudragon": {
+		"sounds": [
+			"custom/jaakudragon"
+		]
+	},
+	"custom.phoenix_story": {
+		"sounds": [
+			"custom/phoenix_story"
+		]
+	},
+	"custom.falchion_standby": {
+		"sounds": [
+			"custom/falchion_standby"
+		]
+	},
+	"custom.falchion": {
+		"sounds": [
+			"custom/falchion"
+		]
+	},
+	"custom.konchuu_daihyakka": {
+		"sounds": [
+			"custom/konchuu_daihyakka"
+		]
+	},
+	"custom.konchuu_daihyakka_description": {
+		"sounds": [
+			"custom/konchuu_daihyakka_description"
+		]
+	},
+	"custom.sabela_henshin": {
+		"sounds": [
+			"custom/sabela_henshin"
+		]
+	},
+	"custom.splitblade": {
+		"sounds": [
+			"custom/two_blades"
+		]
+	},
+	"custom.oneblade": {
+		"sounds": [
+			"custom/one_blade"
+		]
+	},
+	"custom.fuusoken_standby": {
+		"sounds": [
+			"custom/fuusoken_standby"
+		]
+	},
+	"custom.ninja_name": {
+		"sounds": [
+			"custom/ninja_name"
+		]
+	},
+	"custom.ninja_story": {
+		"sounds": [
+			"custom/ninja_story"
+		]
+	},
+	"custom.kobuta_name": {
+		"sounds": [
+			"custom/kobuta_name"
+		]
+	},
+	"custom.kobuta_story": {
+		"sounds": [
+			"custom/kobuta_story"
+		]
+	},
+	"custom.kenzan_henshin": {
+		"sounds": [
+			"custom/kenzan_henshin"
+		]
+	},
+	"custom.kenzan_kobuta_henshin": {
+		"sounds": [
+			"custom/kenzan_kobuta_henshin"
+		]
+	},
+	"custom.brave_name": {
+		"sounds": [
+			"custom/brave_name"
+		]
+	},
+	"custom.brave_story": {
+		"sounds": [
+			"custom/brave_story"
+		]
+	},
+	"custom.eagle_name": {
+		"sounds": [
+			"custom/eagle_name"
+		]
+	},
+	"custom.eagle_story": {
+		"sounds": [
+			"custom/eagle_story"
+		]
+	},
+	"custom.journey_name": {
+		"sounds": [
+			"custom/journey_name"
+		]
+	},
+	"custom.journey_story": {
+		"sounds": [
+			"custom/journey_story"
+		]
+	},
+	"custom.hansel_name": {
+		"sounds": [
+			"custom/hansel_name"
+		]
+	},
+	"custom.hansel_story": {
+		"sounds": [
+			"custom/hansel_story"
+		]
+	},
+	"custom.bremen_name": {
+		"sounds": [
+			"custom/bremen_name"
+		]
+	},
+	"custom.bremen_story": {
+		"sounds": [
+			"custom/bremen_story"
+		]
+	},
+	"custom.pegasus_name": {
+		"sounds": [
+			"custom/pegasus_name"
+		]
+	},
+	"custom.pegasus_story": {
+		"sounds": [
+			"custom/pegasus_story"
+		]
+	},
+	"custom.lion_name": {
+		"sounds": [
+			"custom/lion_name"
+		]
+	},
+	"custom.lion_story": {
+		"sounds": [
+			"custom/lion_story"
+		]
+	},
+	"custom.peter_name": {
+		"sounds": [
+			"custom/peter_name"
+		]
+	},
+	"custom.peter_story": {
+		"sounds": [
+			"custom/peter_story"
+		]
+	},
+	"custom.cerberus_name": {
+		"sounds": [
+			"custom/cerberus_name"
+		]
+	},
+	"custom.cerberus_story": {
+		"sounds": [
+			"custom/cerberus_story"
+		]
+	},
+	"custom.hedgehog_name": {
+		"sounds": [
+			"custom/hedgehog_name"
+		]
+	},
+	"custom.hedgehog_story": {
+		"sounds": [
+			"custom/hedgehog_story"
+		]
+	},
+	"custom.lamp_name": {
+		"sounds": [
+			"custom/lamp_name"
+		]
+	},
+	"custom.lamp_story": {
+		"sounds": [
+			"custom/lamp_story"
+		]
+	},
+	"custom.buster_standby": {
+		"sounds": [
+			"custom/buster_standby"
+		]
+	},
+	"custom.buster_henshin": {
+		"sounds": [
+			"custom/buster_henshin"
+		]
+	},
+	"custom.buster_finisher_standby": {
+		"sounds": [
+			"custom/buster_finisher_standby"
+		]
+	},
+	"custom.buster_pre_finisher_1": {
+		"sounds": [
+			"custom/buster_pre_finisher_1"
+		]
+	},
+	"custom.buster_finisher_1": {
+		"sounds": [
+			"custom/buster_finisher_1"
+		]
+	},
+	"custom.buster_pre_finisher_2": {
+		"sounds": [
+			"custom/buster_pre_finisher_2"
+		]
+	},
+	"custom.buster_finisher_2": {
+		"sounds": [
+			"custom/buster_finisher_2"
+		]
+	},
+	"custom.buster_pre_finisher_3": {
+		"sounds": [
+			"custom/buster_pre_finisher_3"
+		]
+	},
+	"custom.genbu_name": {
+		"sounds": [
+			"custom/genbu_name"
+		]
+	},
+	"custom.genbu_story": {
+		"sounds": [
+			"custom/genbu_story"
+		]
+	},
+	"custom.jackun_name": {
+		"sounds": [
+			"custom/jackun_name"
+		]
+	},
+	"custom.jackun_story": {
+		"sounds": [
+			"custom/jackun_story"
+		]
+	},
+	"custom.swordchange": {
+		"sounds": [
+			"custom/swordchange"
+		]
+	},
+	"custom.gunchange": {
+		"sounds": [
+			"custom/gunchange"
+		]
+	},
+	"custom.onjuuken_standby": {
+		"sounds": [
+			"custom/onjuuken_standby"
+		]
+	},
+	"custom.onjuuken_sword_henshin": {
+		"sounds": [
+			"custom/onjuuken_sword_henshin"
+		]
+	},
+	"custom.onjuuken_gun_henshin": {
+		"sounds": [
+			"custom/onjuuken_gun_henshin"
+		]
+	},
+	"custom.ocean_name": {
+		"sounds": [
+			"custom/ocean_name"
+		]
+	},
+	"custom.ocean_story": {
+		"sounds": [
+			"custom/ocean_story"
+		]
+	}
+}
+
+
