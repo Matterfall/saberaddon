@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FGF",
+        "LEL",
+        "FRF"
+    ],
+    "key": { 
+        "G": {
+            "item": "saber:blank_seiken"
+        },
+        "L": {
+            "tag": "forge:ingots/silver"
+        },
+        "F": {
+            "item": "threecore:magenta_fabric"
+        },
+        "E": {
+            "item": "threecore:circuit"
+        },
+        "R": {
+            "item": "minecraft:crossbow"
+        }
+    },
+    "result": {
+        "item": "saber:onjuuken_suzune_sword",
+        "count": 1
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "DGD"
+    ],
+    "key": {
+        "F": {
+            "tag": "forge:ingots/silver"
+        },
+        "G": {
+            "item": "minecraft:blaze_rod"
+        },
+        "E": {
+            "item": "saber:blank_seiken"
+        },
+        "D": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "saber:kaenken_rekka",
+        "count": 1
+    }
+}

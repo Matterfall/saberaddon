@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EDE",
+        "DFD",
+        "EDE"
+    ],
+    "key": {
+        "D": {
+            "item": "saber:blank_wrb"
+        },
+        "E": {
+            "tag": "forge:ingots/silver"
+        },
+        "F": {
+            "item": "minecraft:book"
+        }
+    },
+    "result": {
+        "item": "saber:blank_big_wrb",
+        "count": 1
+    }
+}

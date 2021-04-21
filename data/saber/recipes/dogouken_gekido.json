@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "DGD"
+    ],
+    "key": {
+        "D": {
+            "tag": "forge:ingots/silver"
+        },
+        "G": {
+            "item": "minecraft:obsidian"
+        },
+        "E": {
+            "item": "saber:blank_seiken"
+        },
+        "F": {
+            "tag": "forge:ingots/steel"
+        }
+    },
+    "result": {
+        "item": "saber:dogouken_gekido",
+        "count": 1
+    }
+}

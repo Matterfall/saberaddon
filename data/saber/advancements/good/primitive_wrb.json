@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:primitive_wrb"
+        },
+        "title": {
+            "translate": "saber.advancements.primitivedragon"
+        },
+        "description": {
+            "translate": "saber.advancements.primitivedragon.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "saber:good/saber_crimsondragon",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:primitive_wrb_brave"
+                    }
+                ]
+            }
+        }
+    }
+}

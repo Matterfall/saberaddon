@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:purple_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        }
+    },
+    "result": {
+        "item": "saber:jaaku_wrb",
+        "count": 1
+    }
+}

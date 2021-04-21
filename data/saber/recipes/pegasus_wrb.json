@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DFD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:blue_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        },
+        "F": {
+            "item": "minecraft:saddle"
+        }
+    },
+    "result": {
+        "item": "saber:pegasus_wrb",
+        "count": 1
+    }
+}

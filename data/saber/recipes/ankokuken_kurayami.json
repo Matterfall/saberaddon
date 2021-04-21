@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "DGD"
+    ],
+    "key": {
+        "D": {
+            "tag": "forge:ingots/silver"
+        },
+        "G": {
+            "item": "minecraft:ender_eye"
+        },
+        "E": {
+            "item": "saber:blank_seiken"
+        },
+        "F": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "saber:ankokuken_kurayami",
+        "count": 1
+    }
+}

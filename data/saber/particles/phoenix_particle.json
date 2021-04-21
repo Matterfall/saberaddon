@@ -1,0 +1,10 @@
+{
+  "always_show" : false,
+  "color" : [255, 255, 255],
+  "diameter" : 2,
+  "max_age" : 25,
+  "alpha" : 1.0,
+  "can_collide" : false,
+  "death_on_collide" : false,
+  "random_texture" : false
+}

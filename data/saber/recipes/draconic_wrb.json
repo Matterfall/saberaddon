@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DAD",
+        "SEF",
+        "DGD"
+    ],
+    "key": {
+        "D": {
+            "tag": "forge:ingots/silver"
+        },
+        "G": {
+            "item": "minecraft:bookshelf"
+        },
+        "E": {
+            "item": "saber:blank_big_wrb"
+        },
+        "A": {
+            "item": "saber:eagle_wrb"
+        },
+        "S": {
+            "item": "saber:brave_wrb"
+        },
+        "F": {
+            "item": "saber:journey_wrb"
+        }
+    },
+    "result": {
+        "item": "saber:draconic_wrb",
+        "count": 1
+    }
+}

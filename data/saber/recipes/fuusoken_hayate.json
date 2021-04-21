@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FGF",
+        "EEE",
+        "FGF"
+    ],
+    "key": { 
+        "G": {
+            "item": "saber:blank_seiken"
+        },
+        "E": {
+            "tag": "forge:ingots/silver"
+        },
+        "F": {
+            "item": "threecore:green_fabric"
+        }
+    },
+    "result": {
+        "item": "saber:fuusoken_hayate",
+        "count": 1
+    }
+}

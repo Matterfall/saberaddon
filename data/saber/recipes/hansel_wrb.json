@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:magenta_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        }
+    },
+    "result": {
+        "item": "saber:hansel_wrb",
+        "count": 1
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "threecore:pressing",
+  "ingredient":{
+      "item": "minecraft:book" 
+  },
+  "cast": {
+    "tag": "forge:ingots/silver" 
+  },
+  "experience": 0.2,
+  "energy": 250,
+  "result": {
+    "item": "saber:blank_wrb"
+  }
+}

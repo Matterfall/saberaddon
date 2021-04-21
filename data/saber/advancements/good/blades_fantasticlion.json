@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:fantastic_face"
+        },
+        "title": {
+            "translate": "saber.advancements.fantasticlion"
+        },
+        "description": {
+            "translate": "saber.advancements.fantasticlion.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "saber:good/suiseiken_nagare",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:blades_fantasticlion"
+                    }
+                ]
+            }
+        }
+    }
+}

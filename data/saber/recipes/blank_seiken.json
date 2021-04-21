@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EEE",
+        "EFE",
+        "EEE"
+    ],
+    "key": { 
+        "E": {
+            "tag": "forge:ingots/silver"
+        },
+        "F": {
+            "item": "minecraft:diamond_sword"
+        }
+    },
+    "result": {
+        "item": "saber:blank_seiken",
+        "count": 1
+    }
+}

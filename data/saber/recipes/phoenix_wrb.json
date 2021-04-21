@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DFD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:orange_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        },
+        "F": {
+            "item": "saber:phoenix_feather"
+        }
+    },
+    "result": {
+        "item": "saber:phoenix_wrb",
+        "count": 1
+    }
+}

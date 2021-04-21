@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "DED",
+        "###"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:black_fabric"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:phoenix_feather"
+        }
+    },
+    "result": {
+        "item": "saber:haken_bladriver",
+        "count": 1
+    }
+}

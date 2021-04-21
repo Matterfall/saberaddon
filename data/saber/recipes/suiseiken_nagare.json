@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "DGD"
+    ],
+    "key": {
+        "F": {
+            "tag": "forge:ingots/silver"
+        },
+        "G": {
+            "item": "minecraft:water_bucket"
+        },
+        "E": {
+            "item": "saber:blank_seiken"
+        },
+        "D": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "saber:suiseiken_nagare",
+        "count": 1
+    }
+}

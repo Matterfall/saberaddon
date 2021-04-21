@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DFD",
+        "DED",
+        "#G#"
+    ],
+    "key": {
+        "D": {
+            "item": "threecore:light_blue_fabric"
+        },
+        "G": {
+            "item": "threecore:advanced_circuit"
+        },
+        "#": {
+            "tag": "forge:ingots/silver"
+        },
+        "E": {
+            "item": "saber:blank_wrb"
+        },
+        "F": {
+            "item": "minecraft:writable_book"
+        }
+    },
+    "result": {
+        "item": "saber:peter_wrb",
+        "count": 1
+    }
+}

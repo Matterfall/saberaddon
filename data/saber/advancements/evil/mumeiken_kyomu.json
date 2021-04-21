@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:mumeiken_kyomu"
+        },
+        "title": {
+            "translate": "saber.advancements.mumeiken_kyomu"
+        },
+        "description": {
+            "translate": "saber.advancements.mumeiken_kyomu.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "parent": "saber:evil/root",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:mumeiken_kyomu"
+                    }
+                ]
+            }
+        }
+    }
+}

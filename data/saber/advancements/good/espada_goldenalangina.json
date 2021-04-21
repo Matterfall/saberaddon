@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:golden_face"
+        },
+        "title": {
+            "translate": "saber.advancements.goldenalangina"
+        },
+        "description": {
+            "translate": "saber.advancements.goldenalangina.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "task"
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "saber:good/raimeiken_ikazuchi",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:espada_goldenalangina"
+                    }
+                ]
+            }
+        }
+    }
+}

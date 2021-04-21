@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "saber:haken_bladriver"
+        },
+        "title": {
+            "translate": "saber.advancements.haken_bladriver"
+        },
+        "description": {
+            "translate": "saber.advancements.haken_bladriver.description"
+        }, 
+        "show_toast": true,
+        "announce_to_chat": true,
+		"frame": "goal"
+    },
+    "parent": "saber:evil/mumeiken_kyomu",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "saber:haken_bladriver"
+                    }
+                ]
+            }
+        }
+    }
+}

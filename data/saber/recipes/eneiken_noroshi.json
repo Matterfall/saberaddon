@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EGE",
+        "ELE",
+        "FDF"
+    ],
+    "key": { 
+        "G": {
+            "item": "minecraft:honey_bottle"
+        },
+        "E": {
+            "tag": "forge:ingots/silver"
+        },
+        "F": {
+            "item": "threecore:red_fabric"
+        },
+        "L": {
+            "item": "saber:blank_seiken"
+        },
+        "D": {
+            "item": "threecore:advanced_circuit"
+        }
+    },
+    "result": {
+        "item": "saber:eneiken_noroshi",
+        "count": 1
+    }
+}

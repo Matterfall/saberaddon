@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FEF",
+        "FGF"
+    ],
+    "key": { 
+        "G": {
+            "item": "saber:phoenix_feather"
+        },
+        "E": {
+            "item": "saber:blank_seiken"
+        },
+        "F": {
+            "tag": "forge:ingots/steel"
+        }
+    },
+    "result": {
+        "item": "saber:mumeiken_kyomu",
+        "count": 1
+    }
+}
