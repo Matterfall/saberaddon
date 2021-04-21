@@ -1,0 +1,149 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "group": "driver_tab_saber",
+      "rarity": "rare"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/seiken_swordriver.png"
+   		    }
+    ],
+
+    "abilities": {
+        "rekka_insert": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.insertseiken"
+          },
+          "icon": {
+            "item": "saber:kaenken_rekka",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "red",
+          "additional_data": {},
+          "commands": [ 
+            "/playsound minecraft:custom.sword_insert master @a ~ ~ ~",
+            "/clear @s saber:kaenken_rekka",
+            "/replaceitem entity @s armor.chest saber:swordriver_saber"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:kaenken_rekka"
+                }
+              }
+          ]
+        },
+        "ikazuchi_insert": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.insertseiken"
+          },
+          "icon": {
+            "item": "saber:raimeiken_ikazuchi",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "yellow",
+          "additional_data": {},
+          "commands": [ 
+            "/playsound minecraft:custom.sword_insert master @a ~ ~ ~",
+            "/clear @s saber:raimeiken_ikazuchi",
+            "/replaceitem entity @s armor.chest saber:swordriver_espada"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:raimeiken_ikazuchi"
+                }
+              }
+          ]
+        },
+        "nagare_insert": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.insertseiken"
+          },
+          "icon": {
+            "item": "saber:suiseiken_nagare",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "blue",
+          "additional_data": {},
+          "commands": [ 
+            "/playsound minecraft:custom.sword_insert master @a ~ ~ ~",
+            "/clear @s saber:suiseiken_nagare",
+            "/replaceitem entity @s armor.chest saber:swordriver_blades"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:suiseiken_nagare"
+                }
+              }
+          ]
+        }
+   	}
+}

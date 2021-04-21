@@ -1,0 +1,138 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "rarity": "rare"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/seiken_swordriver.png"
+   		    }
+    ],
+
+    "abilities": {
+      "remove_sword": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.removeseiken"
+          },
+          "icon": {
+            "item": "saber:kaenken_rekka",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "red",
+          "additional_data": {},
+          "commands": [ 
+            "/playsound minecraft:custom.sword_remove master @a ~ ~ ~",
+            "/give @s saber:kaenken_rekka",
+            "/replaceitem entity @s armor.chest saber:seiken_swordriver"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              }
+          ]
+        },
+        "brave_dragon": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:seiken_swordriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "red",
+          "additional_data": {},
+          "commands": [ 
+            "/scoreboard objectives add SaberStand dummy", 
+            "/scoreboard players set @s SaberStand 0",
+            "/clear @s saber:brave_wrb",
+            "/replaceitem entity @s armor.chest saber:saber_brave"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:brave_wrb"
+                }
+              }
+          ]
+        },
+        "draconic_knight": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:seiken_swordriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [ 
+            "/scoreboard objectives add SaberStand dummy", 
+            "/scoreboard players set @s SaberStand 0",
+            "/clear @s saber:draconic_wrb",
+            "/replaceitem entity @s armor.chest saber:saber_draconic"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:draconic_wrb"
+                }
+              }
+          ]
+        }
+   	}
+}

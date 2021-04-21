@@ -1,0 +1,158 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "group": "driver_tab_saber",
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		  {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/sol/sol_buckle.png"
+   		  }
+    ],
+
+    "abilities": { 
+        "slash_henshin": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:sol_buckle",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "pink",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add SlashStand dummy", 
+            "/scoreboard players set @s SlashStand 0",
+            "/replaceitem entity @s armor.chest saber:slash_buckle"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": [
+                  {
+                    "item": "saber:onjuuken_suzune_gun"
+                  },
+                  {
+                    "item": "saber:onjuuken_suzune_sword"
+                  }
+                ]
+              }
+          ]
+        },
+        "kenzan_henshin": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:sol_buckle",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "green",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add KenzanStand dummy", 
+            "/scoreboard players set @s KenzanStand 0",
+            "/replaceitem entity @s armor.chest saber:kenzan_buckle"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": [
+                  {
+                    "item": "saber:fuusoken_hayate"
+                  }
+                ]
+              }
+          ]
+        },
+        "buster_henshin": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:sol_buckle",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add BusterStand dummy", 
+            "/scoreboard players set @s BusterStand 0",
+            "/replaceitem entity @s armor.chest saber:buster_buckle"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": [
+                  {
+                    "item": "saber:dogouken_gekido"
+                  }
+                ]
+              }
+          ]
+        }
+   	}
+}

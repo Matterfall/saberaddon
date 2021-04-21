@@ -1,0 +1,95 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "rarity": "rare"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/seiken_swordriver.png"
+   		    }
+    ],
+
+    "abilities": {
+      "remove_sword": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.removeseiken"
+          },
+          "icon": {
+            "item": "saber:suiseiken_nagare",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "blue",
+          "additional_data": {},
+          "commands": [ 
+            "/playsound minecraft:custom.sword_remove master @a ~ ~ ~",
+            "/give @s saber:suiseiken_nagare",
+            "/replaceitem entity @s armor.chest saber:seiken_swordriver"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              }
+          ]
+        },
+        "lion_senki": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.saber.henshin"
+          },
+          "icon": {
+            "item": "saber:seiken_swordriver",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "blue",
+          "additional_data": {},
+          "commands": [ 
+            "/scoreboard objectives add BladesStand dummy", 
+            "/scoreboard players set @s BladesStand 0",
+            "/clear @s saber:lion_wrb",
+            "/replaceitem entity @s armor.chest saber:blades_lion"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:lion_wrb"
+                }
+              }
+          ]
+        }
+   	}
+}
