@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "saber:item/vanilla_sealed/netherite_sword_sealed"
+  }
+}

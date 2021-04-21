@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "saber:item/falchion/mumeiken_kyomu"
+  }
+}

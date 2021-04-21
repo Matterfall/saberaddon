@@ -1,0 +1,22 @@
+{
+	"type": "threecore:biped",
+	"scale": {
+		"head": 0.5,
+		"fallback": 0.252
+	},
+	"arm_type": "fixed",
+	"visibility_overrides": {
+		"head": true,
+		"head_overlay": true,
+		"chest": true,
+		"chest_overlay": true,
+		"right_arm": true,
+		"right_arm_overlay": true,
+		"left_arm": true,
+		"left_arm_overlay": true,
+		"right_leg": true,
+		"right_leg_overlay": true,
+		"left_leg": true,
+		"left_leg_overlay": true
+	}
+}
