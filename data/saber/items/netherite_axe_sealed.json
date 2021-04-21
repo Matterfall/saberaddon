@@ -1,0 +1,21 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 2031,
+		"rarity": "common"
+	},
+    "tool_type": "sword",
+    "attack_damage": -6,
+    "attack_speed": -2.4,
+    "item_tier": {
+        "max_uses": 2031,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "minecraft:netherite_ingot"
+        }
+    }
+}

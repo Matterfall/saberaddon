@@ -1,0 +1,8 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 1, 
+		"rarity": "rare"
+	}
+}

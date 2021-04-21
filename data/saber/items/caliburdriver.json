@@ -1,0 +1,115 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "group": "driver_tab_saber",
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/calibur/caliburdriver.png"
+   		    }
+    ],
+
+    "abilities": { 
+        "jaaku_dragon": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "saber:ankokuken_kurayami",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "purple",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add CaliburStand dummy", 
+            "/scoreboard players set @s CaliburStand 0",
+            "/clear @s saber:jaaku_wrb",
+            "/replaceitem entity @s armor.chest saber:caliburdriver_jaaku"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:ankokuken_kurayami"
+                },
+                "offhand": {
+                  "item": "saber:jaaku_wrb"
+                }
+              } 
+          ] 
+        },
+        "jaou_dragon": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "saber:ankokuken_kurayami",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "purple",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add CaliburJaouStand dummy", 
+            "/scoreboard players set @s CaliburJaouStand 0",
+            "/clear @s saber:jaou_wrb",
+            "/replaceitem entity @s armor.chest saber:caliburdriver_jaou"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:ankokuken_kurayami"
+                },
+                "offhand": {
+                  "item": "saber:jaou_wrb"
+                }
+              } 
+          ] 
+        }
+   	}
+}

@@ -1,0 +1,96 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 1,
+		"group": "wrb_tab",
+		"rarity": "rare"
+	},
+
+	"abilities": {
+		"name": {
+    		"ability": "threecore:command",
+    		"show_in_bar": true,
+    		"hidden": false,
+    		"title": {
+      			"translate": "ability.saber.name"
+    		},
+    		"icon": {
+      			"texture": "saber:textures/item/books/lion_senki.png",
+      			"u": 0,
+      			"v": 0,
+      			"width": 16,
+      			"height": 16,
+      			"texture_width": 16,
+      			"texture_height": 16,
+      			"type": "threecore:texture"
+    		},
+    		"bar_color": "blue",
+    		"additional_data": {},
+    		"commands": "/playsound minecraft:custom.lion_name master @a ~ ~ ~",
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          }
+        ]
+    	}, 
+    	"description": {
+    		"ability": "threecore:command",
+    		"show_in_bar": true,
+    		"hidden": false,
+    		"title": {
+      			"translate": "ability.saber.story"
+    		},
+    		"icon": {
+      			"texture": "saber:textures/item/books/lion_senki.png",
+      			"u": 0,
+      			"v": 0,
+      			"width": 16,
+      			"height": 16,
+      			"texture_width": 16,
+      			"texture_height": 16,
+      			"type": "threecore:texture"
+    		},
+    		"bar_color": "blue",
+    		"additional_data": {},
+    		"commands": "/playsound minecraft:custom.lion_story master @a ~ ~ ~",
+        "conditions": [
+          {
+            "type": "threecore:equipment_slot",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true,
+            "slot": "mainhand"
+          },
+          {
+            "type": "threecore:action",
+            "custom_title": {
+              "text": "empty"
+            },
+            "invert": false,
+            "enabling": true,
+            "needs_key": true
+          }
+        ]
+    	}
+  	}
+}

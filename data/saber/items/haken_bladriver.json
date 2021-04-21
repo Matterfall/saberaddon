@@ -1,0 +1,69 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": { 
+      "group": "driver_tab_saber",
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/falchion/haken_bladriver.png"
+   		    }
+    ],
+
+    "abilities": {
+        "falchion_standby": {
+          "ability": "threecore:command",
+          "show_in_bar": true,
+          "hidden": false,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "saber:mumeiken_kyomu",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "orange",
+          "additional_data": {},
+          "commands": [
+            "/scoreboard objectives add FalchionStand dummy", 
+            "/scoreboard players set @s FalchionStand 0",
+            "/clear @s saber:phoenix_wrb",
+            "/replaceitem entity @s armor.chest saber:haken_bladriver_form"
+          ],
+          "conditions": [
+              {
+                "type": "threecore:action",
+                "enabling": true
+              },
+              {
+                 "type": "threecore:equipment_slot",
+                 "slot": "chest"
+              },
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:mumeiken_kyomu"
+                },
+                "offhand": {
+                  "item": "saber:phoenix_wrb"
+                }
+              }
+          ]
+        }
+   	}
+}

@@ -1,0 +1,233 @@
+{
+   "type": "threecore:armor",
+
+   "slot": "chest",
+
+   "properties": {
+      "group": "driver_tab_saber",
+      "rarity": "epic"
+   },
+
+   "armor_material": "saber_drivers",
+
+   "layers": [
+   		    {
+   			    "type": "threecore:default",
+   			    "model": "saber:saber_suits",
+   			    "texture": "saber:textures/models/armor/sabela/sabela_belt.png"
+   		    },
+          {
+            "type": "threecore:default",
+            "model": "saber:saber_suits",
+            "texture": {
+            "base": "saber:textures/models/armor/sabela/sabela.png",
+            "transformers": [
+                {
+                  	"type": "threecore:alpha_mask",
+                  	"mask": "saber:textures/models/alpha_masks/sabela/transformation_#TIMER.png"
+                }
+         	  ],
+         	  "variables": {
+               	"TIMER": {
+                  "type": "threecore:integer_nbt",
+                  "nbt_tag": "Opening"
+               	}
+            },
+         	  "output": "saber:textures/models/armor/sabela/sabela_#TIMER"
+         	}
+      	},
+      	{
+         	"type": "threecore:default",
+         	"glow": true,
+         	"model": "saber:saber_suits",
+         	"texture": "saber:textures/models/armor/sabela/sabela_glow.png",
+         	"predicates": [
+        		{
+          			"type": "threecore:integer_nbt",
+          			"nbt_tag": "Sabela",
+          			"value": 32
+        		}
+      		]
+      	}
+    ],
+
+    "abilities": {
+        "opening": {
+         	"ability": "threecore:opening_nbt_timer",
+         	"max_timer": 32,
+         	"icon": {
+            	"type": "threecore:item",
+            	"item": "saber:royal_sol_buckle"
+         	},
+          "bar_color": "red", 
+         	"conditions": [
+            	{
+               	"type": "threecore:action",
+               	"enabling": true
+            	},
+            	{
+              	 "type": "threecore:equipment_slot",
+               	 "slot": "chest"
+            	},
+              {
+                "type": "threecore:wearing_item",
+                "custom_title": {
+                  "text": "empty"
+                },
+                "invert": false,
+                "enabling": false,
+                "needs_key": false,
+                "mainhand": {
+                  "item": "saber:eneiken_noroshi"
+                },
+                "offhand": {
+                  "item": "saber:insect_wrb"
+                }
+              }
+         	]
+      	},
+        "sabela_henshin": {
+          "ability": "threecore:command",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.command"
+          },
+          "icon": {
+            "item": "minecraft:command_block",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "commands": "/playsound minecraft:custom.sabela_henshin master @a ~ ~ ~",
+          "conditions": [ 
+            {
+              "type": "threecore:ability_enabled",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "ability_id": "opening"
+            },
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Opening",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        "sabela_durability": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor",
+          "amount": 20,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Sabela",
+              "min": 30,
+              "max": 32
+            }
+          ]
+        },
+        "sabela_health": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.max_health",
+          "amount": 7,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Sabela",
+              "min": 30,
+              "max": 32
+            }
+          ]
+        },
+        "sabela_resistance": {
+          "ability": "threecore:attribute_modifier",
+          "show_in_bar": false,
+          "hidden": true,
+          "title": {
+            "translate": "ability.threecore.attribute_modifier"
+          },
+          "icon": {
+            "item": "minecraft:barrier",
+            "count": 1,
+            "type": "threecore:item"
+          },
+          "bar_color": "light_gray",
+          "additional_data": {},
+          "attribute": "minecraft:generic.armor_toughness",
+          "amount": 10,
+          "operation": 0,
+          "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+          "conditions": [
+            {
+              "type": "threecore:item_integer_nbt",
+              "custom_title": {
+                "text": "empty"
+              },
+              "invert": false,
+              "enabling": false,
+              "needs_key": false,
+              "slot": "chest",
+              "nbt_tag": "Sabela",
+              "min": 30,
+              "max": 32
+            }
+          ]
+        }
+   	}
+}

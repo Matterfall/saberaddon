@@ -1,0 +1,65 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 1700,
+		"group": "seiken_tab",
+		"rarity": "rare"
+	},
+    "tool_type": "sword",
+    "attack_damage": 6,
+    "attack_speed": -2.4,
+    "item_tier": {
+        "max_uses": 1700,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "threecore:silver_ingot"
+        }
+    },
+
+    "abilities": {
+        "change_mode": {
+            "ability": "threecore:command",
+            "show_in_bar": false,
+            "hidden": false,
+            "title": {
+                "translate": "ability.saber.changemode"
+            },
+            "icon": {
+                "type": "threecore:item",
+                "item": "saber:onjuuken_suzune_gun",
+                "count": 1
+            },
+            "bar_color": "pink",
+            "additional_data": {},
+            "commands": [
+                "/replaceitem entity @s weapon.mainhand saber:onjuuken_suzune_gun",
+                "/playsound minecraft:custom.gunchange master @a ~ ~ ~"
+            ],
+            "conditions": [
+                {
+                    "type": "threecore:equipment_slot",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": false,
+                    "needs_key": false,
+                    "slot": "mainhand"
+                },
+                {
+                    "type": "threecore:action",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true
+                }
+            ]
+        }
+    }
+}

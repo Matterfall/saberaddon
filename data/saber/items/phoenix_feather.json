@@ -1,0 +1,30 @@
+{
+	"type": "threecore:default",
+	
+	"properties": {
+		"max_stack_size": 64,
+		"group": "technology",
+		"rarity": "epic"
+	},
+
+	"abilities": {
+    "fire_resistance": {
+      "ability": "threecore:damage_immunity",
+      "show_in_bar": false,
+      "hidden": false,
+      "title": {
+        "translate": "ability.threecore.damage_immunity"
+      },
+      "icon": {
+        "type": "threecore:item",
+        "item": "minecraft:barrier",
+        "count": 1
+      },
+      "bar_color": "light_gray",
+      "additional_data": {},
+      "damage_sources": [
+        "fire"
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+    "type": "threecore:tool",
+    "properties": {
+		"max_stack_size": 1,
+		"max_damage": 2000,
+		"group": "seiken_tab",
+		"rarity": "rare"
+	},
+    "tool_type": "sword",
+    "attack_damage": 8,
+    "attack_speed": -3.2,
+    "item_tier": {
+        "max_uses": 2000,
+        "efficiency": 1,
+        "attack_damage": 1,
+        "harvest_level": 2,
+        "enchantibility": 5,
+        "repair_material": {
+            "item": "threecore:silver_ingot"
+        }
+    },
+
+    "abilities": {
+        "scan_1": {
+            "ability": "threecore:command",
+            "show_in_bar": true,
+            "hidden": false,
+            "title": {
+                "translate": "ability.saber.scan"
+            },
+            "icon": {
+                "type": "threecore:item",
+                "item": "saber:blank_wrb",
+                "count": 1
+            },
+            "bar_color": "light_gray",
+            "additional_data": {},
+            "commands": [
+                "/scoreboard objectives add BusterFinisher dummy",
+                "/scoreboard players set @s BusterFinisher 0",
+                "/replaceitem entity @s weapon.mainhand saber:dogouken_gekido_1"
+            ],
+            "conditions": [
+                {
+                    "type": "threecore:equipment_slot",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true,
+                    "slot": "mainhand"
+                },
+                {
+                    "type": "threecore:action",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": true,
+                    "needs_key": true
+                },
+                {
+                    "type": "threecore:wearing_item",
+                    "custom_title": {
+                        "text": "empty"
+                    },
+                    "invert": false,
+                    "enabling": false,
+                    "needs_key": false,
+                    "offhand": [
+                        {
+                            "item": "saber:brave_wrb"
+                        },
+                        {
+                            "item": "saber:bremen_wrb"
+                        },
+                        {
+                            "item": "saber:cerberus_wrb"
+                        },
+                        {
+                            "item": "saber:eagle_wrb"
+                        },
+                        {
+                            "item": "saber:genbu_wrb"
+                        },
+                        {
+                            "item": "saber:hansel_wrb"
+                        },
+                        {
+                            "item": "saber:hedgehog_wrb"
+                        },
+                        {
+                            "item": "saber:insect_wrb"
+                        },
+                        {
+                            "item": "saber:jaaku_wrb"
+                        },
+                        {
+                            "item": "saber:journey_wrb"
+                        },
+                        {
+                            "item": "saber:kobuta_wrb"
+                        },
+                        {
+                            "item": "saber:lamp_wrb"
+                        },
+                        {
+                            "item": "saber:lion_wrb"
+                        },
+                        {
+                            "item": "saber:ninja_wrb"
+                        },
+                        {
+                            "item": "saber:pegasus_wrb"
+                        },
+                        {
+                            "item": "saber:peter_wrb"
+                        },
+                        {
+                            "item": "saber:phoenix_wrb"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

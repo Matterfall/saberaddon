@@ -1,0 +1,13 @@
+[
+  {
+    "name": "saber_drivers",
+    "max_damage_factor": 33,
+    "damage_reduction": [0, 0, 0, 0],
+    "enchantibility": 10,
+    "equip_sound": "minecraft:item.armor.equip_diamond",
+    "toughness": 0,
+    "repair_material": {
+      "item": "minecraft:iron"
+    }
+  }
+]
