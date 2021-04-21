@@ -1,0 +1,41 @@
+{
+	"saber.advancements.jaakuwrb": "味方を裏切る!",
+	"saber.advancements.jaakuwrb.description": "を取得しますジャアクドラゴンワンダーライドブック",
+	"saber.advancements.ankokukenkurayami": "裏切りはそれだけの価値がありましたか?",
+	"saber.advancements.ankokukenkurayami.description": "闇の剣、倉谷の達人になろう!",
+  "advancements.saber.root.title": "みなさん、ボンヌレクチャー！",
+  "advancements.saber.root.description": "この本は何かより大きなものへの鍵です...",
+  "saber.advancements.mumeiken_kyomu": "私の中の虚無...",
+  "saber.advancements.mumeiken_kyomu.description": "無銘剣虚無［ムメイケンキョム］を手に入れる",
+
+  "itemGroup.seiken_tab": "聖剣",
+  "itemGroup.wrb_tab": "ワンダーライドブック",
+  "itemGroup.driver_tab_saber": "ライバー",
+
+  "item.saber.phoenix_feather": "フェニックスフェザー",
+  "item.saber.blank_wrb": "ブランクワンダーライドブック",
+  "item.saber.blank_big_wrb": "ブランク大きいワンダーライドブック",
+  "item.saber.alter_ridebook": "アルターライドブック",
+
+  "item.saber.caliburdriver": "変身ベルト 邪剣カリバードライバー",
+  "item.saber.caliburdriver_jaaku": "変身ベルト 邪剣カリバードライバー",
+ 	"item.saber.jaaku_wrb": "ジャアクドラゴンワンダーライドブック",
+  "item.saber.jaou_wrb": "ジャオウドラゴンワンダーライドブック",
+ 	"item.saber.ankokuken_kurayami": "闇黒剣月闇［アンコクケンクラヤミ］",
+
+ 	"item.saber.mumeiken_kyomu": "無銘剣虚無［ムメイケンキョム］",
+ 	"item.saber.haken_bladriver": "変身ベルト 覇剣ブレードライバー",
+
+  "item.saber.eneiken_noroshi": "変身聖剣 煙叡剣狼煙 [エンエイケンノロシ]",
+  "item.saber.royal_sol_buckle": "納刀ベルト ソードオブロゴスバックル",
+
+  "item.saber.sol_buckle": "納刀ベルト ソードオブロゴスバックル",
+  "item.saber.sol_buckle": "納刀ベルト ソードオブロゴスバックル",
+
+  "item.saber.fuusoken_hayate": "変身聖剣 風双剣翠風［フウソウケンハヤテ］",
+  "item.saber.fuusoken_hayate_blade_main": "変身聖剣 風双剣翠風［フウソウケンハヤテ］ (1/2)",
+  "item.saber.fuusoken_hayate_blade": "変身聖剣 風双剣翠風［フウソウケンハヤテ］ (2/2)",
+
+ 	"item.saber.kaenken_rekka": "火炎剣烈火［カエンケンレッカ］",
+ 	"item.saber.swordriver_saber": "変身ベルト聖剣ソードライバー"
+}
